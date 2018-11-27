@@ -165,8 +165,8 @@
     * [Two Sum - Difference](two-pointers/two-sum-difference.md)
     * [Two Sum - Data Structure Design](two-pointers/two-sum-data-structure-design.md)
     * [Three Sum](two-pointers/three-sum.md)
+    * [Three Sum Smaller](two-pointers/three-sum-smaller.md)
     * [Three Sum - Triangle Count](two-pointers/three-sum-triangle-count.md)
-    * [Three Sum - Closest](two-pointers/three-sum-closest.md)
     * Four Sum
   * [5 Partition](two-pointers/5-partition.md)
     * Color Sort
