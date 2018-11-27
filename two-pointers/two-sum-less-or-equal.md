@@ -14,7 +14,14 @@ Return`5`.
 
 ### Note
 
+小于的话：
 
+```java
+if (nums[left] + nums[right] <= target) {
+    res += right - left;
+    left++;
+}
+```
 
 ### Code
 
