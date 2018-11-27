@@ -1,6 +1,6 @@
 # Sort Colors II
 
-Given an array of_n_objects with_k_different colors \(numbered from 1 to k\), sort them so that objects of the same color are adjacent, with the colors in the order 1, 2, ... k.
+Given an array of\_n\_objects with\_k\_different colors \(numbered from 1 to k\), sort them so that objects of the same color are adjacent, with the colors in the order 1, 2, ... k.
 
 ### Example
 
@@ -8,7 +8,9 @@ Given colors=`[3, 2, 2, 1, 4]`,`k=4`, your code should sort colors in-place to`[
 
 ### Note
 
-### 
+彩虹排序O\(nlogk\)的时间复杂度
+
+本质还是快速选择算法![](/assets/rainbowSorting.png)
 
 ### Code
 
@@ -26,7 +28,7 @@ public class Solution {
         }
         rainbowSort(colors, 0, colors.length - 1, 1, k);
     }
-    
+
     private static void rainbowSort(int[] colors,
                                     int left,
                                     int right,
@@ -38,7 +40,7 @@ public class Solution {
         if (left >= right) {
             return ;
         }
-        
+
         int colorMid = (colorFrom + colorTo) / 2;
         int l = left, r = right;
         while (l <= r) {
@@ -58,7 +60,7 @@ public class Solution {
         rainbowSort(colors, l, right, colorMid + 1, colorTo);
 
     }
-    
+
 }
 ```
 
