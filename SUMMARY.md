@@ -170,6 +170,7 @@
     * [Four Sum](two-pointers/four-sum.md)
   * [5 Partition](two-pointers/5-partition.md)
     * [Color Sort](two-pointers/5-partition/color-sort.md)
+    * [Color Sort II](two-pointers/5-partition/color-sort-ii.md)
 * [String](string.md)
   * [1 Pattern](string/1-pattern.md)
     * Is Subsequence
