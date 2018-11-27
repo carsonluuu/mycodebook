@@ -4,8 +4,8 @@
 
 Given an array`nums`of integers and an int`k`, partition the array \(i.e move the elements in "nums"\) such that:
 
-* All elements &lt; _k _are moved to the _left_
-* All elements &gt;= _k _are moved to the _right_
+* All elements &lt; _k \_are moved to the \_left_
+* All elements &gt;= _k \_are moved to the \_right_
 
 Return the partitioning index, i.e the first index nums\[_i_\] &gt;=_k_.
 
@@ -14,6 +14,10 @@ Return the partitioning index, i.e the first index nums\[_i_\] &gt;=_k_.
 If nums =`[3,2,2,1]`and`k=2`, a valid answer is`1`.
 
 ### Note
+
+快速排序的划分过程
+
+返回左指针就行啦
 
 ### Code
 
