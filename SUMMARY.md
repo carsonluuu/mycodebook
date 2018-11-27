@@ -167,7 +167,7 @@
     * [Three Sum](two-pointers/three-sum.md)
     * [Three Sum Smaller](two-pointers/three-sum-smaller.md)
     * [Three Sum - Triangle Count](two-pointers/three-sum-triangle-count.md)
-    * Four Sum
+    * [Four Sum](two-pointers/four-sum.md)
   * [5 Partition](two-pointers/5-partition.md)
     * Color Sort
 * [String](string.md)
