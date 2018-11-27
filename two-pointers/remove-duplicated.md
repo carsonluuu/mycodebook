@@ -23,6 +23,8 @@ Actually we don't care about what you place in`?`, we only care about the part w
 
 一般都操作不一样的，把右指针的数换到左指针的后一位，如果所有数字都是不一样的左指针会一直比右指针慢一格，右指针会和自己换，所以也是work的。
 
+所以最后返回就是左指针的位置加一
+
 ### Code
 
 ```java

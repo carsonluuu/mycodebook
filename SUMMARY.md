@@ -147,7 +147,6 @@
     * [Moving Zeros](two-pointers/moving-zeros.md)
     * [Remove Elements](two-pointers/remove-elements.md)
     * [Remove Duplicated](two-pointers/remove-duplicated.md)
-    * [Sort Color](two-pointers/sort-color.md)
   * [2 Oppsite](two-pointers/2-oppsite.md)
     * [Rotate Array](two-pointers/2-oppsite/rotate-string.md)
   * [3 Sliding Windows ](two-pointers/sliding-windows.md)
