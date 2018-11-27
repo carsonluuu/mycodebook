@@ -161,9 +161,9 @@
     * [Two Sum - Less Or Equal](two-pointers/two-sum-less-or-equal.md)
     * [Two Sum - Unique Pairs](two-pointers/two-sum-unique-pairs.md)
     * [Two Sum - Greater Than Target](two-pointers/two-sum-greater-than-target.md)
-    * Two Sum - Closest
+    * [Two Sum - Closest](two-pointers/two-sum-closest.md)
     * [Two Sum - Difference](two-pointers/two-sum-difference.md)
-    * Two Sum - Data Structure Design
+    * [Two Sum - Data Structure Design](two-pointers/two-sum-data-structure-design.md)
     * [Three Sum](two-pointers/three-sum.md)
     * [Three Sum - Triangle Count](two-pointers/three-sum-triangle-count.md)
     * [Three Sum - Closest](two-pointers/three-sum-closest.md)
