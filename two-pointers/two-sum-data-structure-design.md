@@ -15,7 +15,7 @@ find(7) // return false
 
 ### Note
 
-就是不同方法的复杂度比较
+HashMap
 
 ### Code
 
