@@ -169,7 +169,7 @@
     * [Three Sum - Triangle Count](two-pointers/three-sum-triangle-count.md)
     * [Four Sum](two-pointers/four-sum.md)
   * [5 Partition](two-pointers/5-partition.md)
-    * Color Sort
+    * [Color Sort](two-pointers/5-partition/color-sort.md)
 * [String](string.md)
   * [1 Pattern](string/1-pattern.md)
     * Is Subsequence
