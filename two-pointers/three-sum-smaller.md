@@ -9,14 +9,14 @@ Input: nums = [-2,0,1,3], and target = 2
 
 Output: 2 
 
-Explanation: Because there are two triplets which sums are less than 2:
-             [-2,0,1]
+Explanation: Because there are two triplets which sums are less than 2:
+             [-2,0,1]
              [-2,0,3]
 ```
 
-###  Note
+### Note
 
-
+固定一个数，做2sum smaller
 
 ### Code
 
@@ -27,7 +27,7 @@ class Solution {
         if (nums == null || nums.length < 3) {
             return res;
         }
-        
+
         Arrays.sort(nums);
         int len = nums.length;
         for (int i = 0; i < len - 2; i++) {
@@ -41,7 +41,7 @@ class Solution {
                 }
             }
         }
-        
+
         return res;
     }
 }
