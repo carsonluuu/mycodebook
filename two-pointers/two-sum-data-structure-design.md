@@ -1,44 +1,51 @@
-# Two Sum - Greater than target
+# Two Sum III - Data structure design
 
-Given an array of integers, find how many pairs in the array such that their sum is bigger than a specific target number. Please return the number of pairs.
+Design and implement a TwoSum class. It should support the following operations:`add`and`find`.
 
-Do it in O\(1\) extra space and O\(nlogn\) time.
+`add`- Add the number to an internal data structure.  
+`find`- Find if there exists any pair of numbers which sum is equal to the value.
 
 ### Example
 
-Given numbers =`[2, 7, 11, 15]`, target =`24`. Return`1`. \(11 + 15 is the only pair\)
+```
+add(1); add(3); add(5);
+find(4) // return true
+find(7) // return false
+```
 
 ### Note
 
-数pair数目，大的话left到right之间都算的（right - left）累加一下
+就是不同方法的复杂度比较
 
 ### Code
 
 ```java
-public class Solution {
-    /**
-     * @param nums: an array of integer
-     * @param target: An integer
-     * @return: an integer
+public class TwoSum {
+    /*
+     * @param number: An integer
+     * @return: nothing
      */
-    public int twoSum2(int[] nums, int target) {
+    private Map<Integer, Integer> map = new HashMap<>();
+    public void add(int number) {
         // write your code here
-        if (nums == null || nums.length < 2) {
-            return 0;
-        }
+        map.put(number, map.getOrDefault(number, 0) + 1);
+    }
 
-        Arrays.sort(nums);
-        int left = 0, right = nums.length - 1;
-        int count = 0;
-        while (left < right) {
-            if (nums[left] + nums[right] <= target) {
-                left++;
-            } else {
-                count += right - left;
-                right--;
+    /*
+     * @param value: An integer
+     * @return: Find if there exists any pair of numbers which sum is equal to the value.
+     */
+    public boolean find(int value) {
+        // write your code here
+        for (Map.Entry<Integer, Integer> e : map.entrySet()) {
+            int i = e.getKey();
+            int j = value - i;
+            int count = e.getValue();
+            if ((i == j && count > 1) || (i != j && map.containsKey(j)) ) {
+                return true;
             }
         }
-        return count;
+        return false;
     }
 }
 ```

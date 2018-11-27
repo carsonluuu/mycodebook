@@ -12,7 +12,11 @@ return`[1, 2]`\(7 - 2 = 5\)
 
 ### Note
 
-有点区别。
+有点区别。返回的第几个位置，双指针有点烦的。
+
+HashMap就是看一看加/减target在不在Map里面
+
+双指针的话这里同向双指针了，差是递增的！
 
 ### Code
 
@@ -25,7 +29,7 @@ public class Solution {
      */
     public int[] twoSum7(int[] nums, int target) {
         // write your code here
-        
+
         if (nums == null || nums.length < 2) {
             return new int[]{};
         }
