@@ -10,6 +10,8 @@ Given numbers =`[2, 7, 11, 15]`, target =`24`. Return`1`. \(11 + 15 is the only 
 
 ### Note
 
+数pair数目，大的话left到right之间都算的（right - left）累加一下
+
 ### Code
 
 ```java
@@ -24,7 +26,7 @@ public class Solution {
         if (nums == null || nums.length < 2) {
             return 0;
         }
-        
+
         Arrays.sort(nums);
         int left = 0, right = nums.length - 1;
         int count = 0;
