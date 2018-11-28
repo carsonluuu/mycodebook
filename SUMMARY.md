@@ -181,9 +181,11 @@
     * Implement Str
     * [Longest Substring with At Least K Repeating Characters](string/longest-substring-with-at-least-k-repeating-characters.md)
     * [Longest Common Prefix](string/longest-common-prefix.md)
-  * 4 Palindrome
+  * [4 Number](string/4-number.md)
+    * [Maximum Swap](string/4-number/maximum-swap.md)
   * 5 Decode
-  * [6 Binary String](string/6-binary-string.md)
+  * 6 Palindrome
+  * [8 Binary String](string/6-binary-string.md)
     * [Count Binary Substrings](string/6-binary-string/count-binary-substrings.md)
   * [7 Evaluation](string/7-evaluation.md)
     * [Solve the Equation](string/implementation/solve-the-equation.md)
