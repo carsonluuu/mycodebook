@@ -54,11 +54,11 @@
     * [Walls and Gates](bfs/walls-and-gates.md)
   * [2 Shortest](bfs/2-shortest.md)
     * [01 Matrix](bfs/01-matrix.md)
+    * [Knight Shortest Path](bfs/knight-shortest-path.md)
     * [Shortest Distance from All Buildings](bfs/shortest-distance-from-all-buildings.md)
     * [Shortest Bridge](bfs/shortest-bridge.md)
     * [Snakes and Ladders](bfs/snakes-and-ladders.md)
     * [Bus Route](bfs/bus-route.md)
-    * [Knight Shortest Path](bfs/knight-shortest-path.md)
 * [Dynamic Programming](dynamic-programming.md)
   * [Backpack](dynamic-programming/backpack.md)
     * K-Sum

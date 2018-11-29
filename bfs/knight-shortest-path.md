@@ -39,7 +39,7 @@ If the knight is at \(_x_,_y_\), he can get to the following positions in one st
 
 ### Note
 
- BFS最短路径——三层循环
+BFS最短路径——三层循环
 
 ### Code
 
