@@ -58,6 +58,7 @@
     * [Shortest Bridge](bfs/shortest-bridge.md)
     * [Snakes and Ladders](bfs/snakes-and-ladders.md)
     * [Bus Route](bfs/bus-route.md)
+    * [Knight Shortest Path](bfs/knight-shortest-path.md)
 * [Dynamic Programming](dynamic-programming.md)
   * [Backpack](dynamic-programming/backpack.md)
     * K-Sum
