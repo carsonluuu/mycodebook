@@ -22,7 +22,6 @@ source = [2, 0] destination = [2, 2] return 6
  [0,0,1],
  [0,0,0]]
 source = [2, 0] destination = [2, 2] return -1
-
 ```
 
 If the knight is at \(_x_,_y_\), he can get to the following positions in one step:
@@ -38,7 +37,9 @@ If the knight is at \(_x_,_y_\), he can get to the following positions in one st
 (x - 2, y - 1)
 ```
 
-###  Note
+### Note
+
+ BFS最短路径——三层循环
 
 ### Code
 
@@ -56,13 +57,13 @@ public class Solution {
         if (grid == null || grid.length == 0 || grid[0].length == 0) {
             return -1;
         }
-        
+
         n = grid.length;
         m = grid[0].length;
-        
+
         Queue<Point> queue = new LinkedList<>();
         queue.offer(source);
-        
+
         int steps = 0;
         while (!queue.isEmpty()) {
             int size = queue.size();
@@ -71,17 +72,17 @@ public class Solution {
                 if (point.x == destination.x && point.y == destination.y) {
                     return steps;
                 }
-                
+
                 for (int direction = 0; direction < 8; direction++) {
                     Point nextPoint = new Point(
                         point.x + deltaX[direction],
                         point.y + deltaY[direction]
                     );
-                    
+
                     if (!inBound(nextPoint, grid)) {
                         continue;
                     }
-                    
+
                     queue.offer(nextPoint);
                     // mark the point not accessible
                     grid[nextPoint.x][nextPoint.y] = true;
@@ -89,10 +90,10 @@ public class Solution {
             }
             steps++;
         }
-        
+
         return -1;
     }
-    
+
     private boolean inBound(Point point, boolean[][] grid) {
         if (point.x < 0 || point.x >= n) {
             return false;
