@@ -21,7 +21,7 @@ If there are lots of incoming S, say S1, S2, ... , Sk where k &gt;= 1B, and you 
 
 ### Note
 
-
+同向双指针分别指向两个字符串
 
 ### Code
 
@@ -32,14 +32,14 @@ class Solution {
         if (s.length() > t.length()) {
             return false;
         }
-        
+
         while (i < s.length() && j < t.length()) {
             if (s.charAt(i) == t.charAt(j)) {
                 i++;
             }
             j++;
         }
-        
+
         return i == s.length();
     }
 }
