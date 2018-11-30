@@ -48,12 +48,12 @@ class Solution {
         }
     }
     private final int[] dx = {1, 0, -1, 0}, dy = {0, 1, 0, -1};
-    
+
     public int shortestDistance(int[][] grid) {
         int m = grid.length, n = grid[0].length;
         int[][] dist = new int[m][n];
         int[][] reach = new int[m][n];
-        
+
         int count = 0;
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -63,7 +63,7 @@ class Solution {
                 }
             }
         }
-        
+
         int shortest = Integer.MAX_VALUE;
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -74,13 +74,13 @@ class Solution {
         }
         return shortest == Integer.MAX_VALUE ? -1 : shortest;
     }
-    
+
     private void bfs(Point p, int[][] grid, 
                      int[][] dist, int[][] reach) {
         int m = grid.length, n = grid[0].length;
         Queue<Point> q = new LinkedList<>();
         boolean[][] visited = new boolean[m][n];
-        
+
         q.offer(p);
         int level = 1;
         while (!q.isEmpty()) {
