@@ -42,7 +42,9 @@ Output:
 
 ### Note
 
-另一种距离的写法，多起点队列，剩余的值写为MAX
+另一种距离的写法，有点DP的思想。
+
+多起点队列，剩余的值写为MAX
 
 ```
 matrix[nextX][nextY] <= matrix[x][y] + 1 ==> matrix[nextX][nextY] = matrix[x][y] + 1
@@ -57,7 +59,7 @@ class Solution {
     private static final int[][] DIR = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
     public int[][] updateMatrix(int[][] matrix) {
         int m = matrix.length, n = matrix[0].length;
-        
+
         Queue<int[]> q = new LinkedList<>();
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -68,7 +70,7 @@ class Solution {
                 }
             }
         }
-        
+
         while (!q.isEmpty()) {
             int[] curr = q.poll();
             int x = curr[0], y = curr[1];
