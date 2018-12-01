@@ -2,7 +2,7 @@
 
 Given a collection of integers that might contain duplicates,_nums_, return all possible subsets \(the power set\).
 
-Each element in a subset must be in _non-descending _order.
+Each element in a subset must be in \_non-descending \_order.
 
 The ordering between two subsets is free. The solution set must not contain duplicate subsets.
 
@@ -42,7 +42,7 @@ public class Solution {
         // write your code here
         List<List<Integer>> res = new ArrayList<List<Integer>>();
         if (nums == null) return res;
-        
+
         if (nums.length == 0) {
             res.add(new ArrayList<Integer>());
             return res;
@@ -51,13 +51,13 @@ public class Solution {
 
         List<Integer> subset = new ArrayList<Integer>();
         helper(nums, 0, subset, res);
-        
+
         return res;
     }
-    
+
     private void helper(int[] nums, int start, List<Integer> list,
                         List<List<Integer>> res) {
-                            
+
         res.add(new ArrayList<Integer>(list));
         for (int i = start; i < nums.length; i++) {
             if (i != start && nums[i] == nums[i - 1]) {
