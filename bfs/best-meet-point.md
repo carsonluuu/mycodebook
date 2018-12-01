@@ -31,9 +31,9 @@ The point (0,2) is an ideal meeting point, as the total travel distance of 2+2+2
 
 **Complexity analysis**
 
-* Time complexity :O\(mn\)
+* Time complexity: O\(mn\)
 
-* Space complexity :O\(mn\)
+* Space complexity: O\(mn\)
 
 ### Code
 
