@@ -6,7 +6,7 @@ A group of two or more people wants to meet and minimize the total travel distan
 
 ```
 Input:
- 
+
 1 - 0 - 0 - 0 - 1
 |   |   |   |   |
 0 - 0 - 0 - 0 - 0
@@ -19,11 +19,13 @@ Output: 6
 Explanation: 
 Given three people living at 
 (0,0), (0,4), and (2,2):
-             
+
 The point (0,2) is an ideal meeting point, as the total travel distance of 2+2+2=6 is minimal. So return 6.
 ```
 
 ### Note
+
+和到各个建筑最短距离不同，不需要暴力去遍历。这里任何点都可以是目标点，也不会有到达不了的情况
 
 1D的话就是[中位数](https://leetcode.com/problems/best-meeting-point/solution/)作为目标点，2D就分别收集row和col，这样都会是排序的，取中位数，算两次距离，相加就是答案
 
