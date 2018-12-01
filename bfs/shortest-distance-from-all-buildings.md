@@ -32,7 +32,7 @@ Explanation: Given three buildings at (0,0), (0,4), (2,2), and an obstacle at (0
 
 O\(m^2\*n^2\)的BFS做法
 
-对于每个空地做一下BFS，然后算到各个建筑最近距离和；然后找出最小的那个空地
+对于每个建筑做一下BFS，然后算到各个空地距离；使用`dist[][]`累加空地的距离，然后找出最小的那个空地
 
 ### Code
 
