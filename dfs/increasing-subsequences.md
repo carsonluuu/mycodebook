@@ -30,22 +30,19 @@ set去重，因为这里不能使用排序去重法
 class Solution {
     public List<List<Integer>> findSubsequences(int[] nums) {
         Set<List<Integer>> res= new HashSet<>();
-        
+
         dfs(res, nums, 0, new ArrayList<>());
-        
+
         return new ArrayList(res);
     }
-    
+
     private void dfs(Set<List<Integer>> res, int[] nums, 
                      int start, List<Integer> list) {
         if (list.size() > 1) {
             res.add(new ArrayList<>(list));
         }
-        
+
         for (int i = start; i < nums.length; i++) {
-            if (i != start && nums[i] == nums[i - 1]) {
-                continue;
-            }
             if (list.size() == 0 || list.get(list.size() - 1) <= nums[i]) {
                 list.add(nums[i]);
                 dfs(res, nums, i + 1, list);

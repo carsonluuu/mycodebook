@@ -98,6 +98,7 @@
     * [Most Frequent Subtree Sum](tree/most-frequent-subtree-sum.md)
     * [Minimum Subtree](tree/minimum-subtree.md)
     * [Subtree with Maximum Average](tree/subtree-with-maximum-average.md)
+    * [Equal Tree Partition](tree/equal-tree-partition.md)
   * [4 Path](tree/4-path.md)
     * [Path Sum](tree/path-sum.md)
     * [Path Sum II](tree/path-sum-ii.md)
