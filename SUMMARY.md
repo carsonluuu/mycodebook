@@ -50,6 +50,7 @@
   * [1 Traverse](bfs/1-traverse.md)
     * [Number of Islands](bfs/number-of-island.md)
     * [Clone Gragh](bfs/clone-gragh.md)
+    * [Number of Distinct Islands](bfs/number-of-distinct-islands.md)
     * [Pacific Atlantic Water Flow](bfs/pacific-atlantic-water-flow.md)
     * [Surrounded Regions](bfs/surrounded-regions.md)
     * [Walls and Gates](bfs/walls-and-gates.md)

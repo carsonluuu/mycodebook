@@ -19,7 +19,7 @@ Explanation:
     5
    / 
   10
-      
+
 Sum: 15
 
    10
@@ -29,8 +29,7 @@ Sum: 15
 Sum: 15
 ```
 
-**Example 2:**  
-
+**Example 2:**
 
 ```
 Input:
@@ -40,7 +39,8 @@ Input:
     /  \
    2   20
 Output: False
-Explanation: You can't split the tree into two trees with equal sum after removing exactly one edge on the tree.
+Explanation: You can't split the tree into two trees 
+             with equal sum after removing exactly one edge on the tree.
 ```
 
 ### **Note**
@@ -70,28 +70,28 @@ class Solution {
         boolean[] res = new boolean[1];
         sum(root.left,  total, res);
         sum(root.right, total, res);
-        
+
         return res[0];
     }
-    
+
     private int sum(TreeNode root) {
         if (root == null) {
             return 0;
         }
-        
+
         return root.val + sum(root.left) + sum(root.right);
     }
-    
+
     private int sum(TreeNode root, int total, boolean[] res) {
         if (root == null) {
             return 0;
         }
-        
+
         int sum = root.val + sum(root.left, total, res) + sum(root.right, total, res);
         if (sum * 2 == total) {
             res[0] = true;
         }
-        
+
         return sum;
     }
 }
