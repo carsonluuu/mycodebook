@@ -46,20 +46,22 @@ are considered different island shapes, because we do not consider reflection / 
 
 ### Note
 
-利用BFS暴力去做, 找到岛屿单元的相对坐标， 使用hashset， set 里面是BFS返回的一系列坐标
+利用BFS暴力去做, 找到岛屿单元的**相对坐标\(the entry point\)**， 使用hashset， set 里面是BFS返回的一系列坐标
+
+给横纵坐标分别一个队列
 
 ### Code
 
 ```java
 class Solution {
-    
+
     final int[] dx = {0, 0, 1, -1};
     final int[] dy = {1, -1, 0, 0};
     public int numDistinctIslands(int[][] grid) {
         if (grid == null || grid.length == 0 || grid[0].length == 0){
             return 0;
         }
-        
+
         Set<List<List<Integer>>> set = new HashSet<>();
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j <grid[0].length; j++) {
@@ -71,7 +73,7 @@ class Solution {
         }
         return set.size();
     }
-    
+
     private List<List<Integer>> bfs(int[][] grid, int a, int b) {
         List<List<Integer>> res = new ArrayList<>();
         int m = grid.length, n = grid[0].length;
@@ -87,9 +89,9 @@ class Solution {
             list.add(y - b);
             res.add(list);
             for (int i = 0; i < 4; i++) {
-                int nx = x +dx[i];
+                int nx = x + dx[i];
                 int ny = y + dy[i];
-                if(nx >= 0 &&nx < m && ny >= 0 && ny < n && grid[nx][ny] == 1){
+                if (nx >= 0 &&nx < m && ny >= 0 && ny < n && grid[nx][ny] == 1) {
                     grid[nx][ny] = 0;
                     qx.offer(nx);
                     qy.offer(ny);

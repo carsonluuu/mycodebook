@@ -191,10 +191,12 @@
     * [Maximum Swap](string/4-number/maximum-swap.md)
   * 5 Decode
   * 6 Palindrome
-  * [8 Binary String](string/6-binary-string.md)
-    * [Count Binary Substrings](string/6-binary-string/count-binary-substrings.md)
   * [7 Evaluation](string/7-evaluation.md)
     * [Solve the Equation](string/implementation/solve-the-equation.md)
+  * [8 Binary String](string/6-binary-string.md)
+    * [Count Binary Substrings](string/6-binary-string/count-binary-substrings.md)
+  * [9 Parenthesis](string/9-parenthesis.md)
+    * [Valid Parenthesis String](string/9-parenthesis/valid-parenthesis-string.md)
 * [Binary Search](binary-search.md)
   * [First Bad Version](binary-search/first-bad-version.md)
   * [Search in a Big Sorted Array](binary-search/search-in-a-big-sorted-array.md)
