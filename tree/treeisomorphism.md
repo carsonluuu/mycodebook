@@ -38,9 +38,6 @@ class TreeIsomorphism
         if (n1.val != n2.val)
             return false;
 
-        // There are two possible cases for n1 and n2 to be isomorphic
-        // Case 1: The subtrees rooted at these nodes have NOT been "Flipped". Both of these subtrees have to be isomorphic.
-        // Case 2: The subtrees rooted at these nodes have been "Flipped"
         return (isIsomorphic(n1.left, n2.left) && isIsomorphic(n1.right, n2.right)) || 
                (isIsomorphic(n1.left, n2.right) && isIsomorphic(n1.right, n2.left));
     }
