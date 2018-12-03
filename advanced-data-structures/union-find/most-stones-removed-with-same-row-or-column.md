@@ -1,8 +1,8 @@
 # [Most Stones Removed with Same Row or Column](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/description/)
 
-On a 2D plane, we place stones at some integer coordinate points.  Each coordinate point may have at most one stone.
+On a 2D plane, we place stones at some integer coordinate points.  Each coordinate point may have at most one stone.
 
-Now, a _move _consists of removing a stone that shares a column or row with another stone on the grid.
+Now, a \_move \_consists of removing a stone that shares a column or row with another stone on the grid.
 
 What is the largest possible number of moves we can make?
 
@@ -37,7 +37,98 @@ Output: 0
 
 暴力并查集
 
-Time: O\(n^2\)
+Time: O\(n^2\) -&gt; ~O\(n\) or O\(nlogn\)
 
 Space: O\(n\)
+
+### Code
+
+```java
+class Solution {
+    private static class UnionFind {
+        private int[] father;
+        private int count;
+        public UnionFind(int n) {
+            father = new int[n];
+            count = n;
+            for (int i = 0; i < n; i++) {
+                father[i] = i;
+            }
+        } 
+        
+        private int find(int x) {
+            if (father[x] == x) {
+                return x;
+            }
+            
+            return father[x] = find(father[x]);
+        }
+        
+        private void union(int a, int b) {
+            int rootA = find(a);
+            int rootB = find(b);
+            if (rootA != rootB) {
+                count--;
+                father[rootA] = rootB;
+            }
+        }
+        
+        private int query() {
+            // write your code here
+            return count;
+        }
+    }
+    
+    public int removeStones(int[][] stones) {
+        int n = stones.length;
+        UnionFind uf = new UnionFind(n);
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (stones[i][0] == stones[j][0] || 
+                    stones[i][1] == stones[j][1]) {
+                    uf.union(i, j);
+                }
+            }
+        }
+        
+        return n - uf.query();
+    }
+}
+```
+
+```java
+class Solution {
+    public int removeStones(int[][] stones) {
+        int N = stones.length;
+        DSU dsu = new DSU(20000);
+
+        for (int[] stone: stones)
+            dsu.union(stone[0], stone[1] + 10000);
+
+        Set<Integer> seen = new HashSet();
+        for (int[] stone: stones)
+            seen.add(dsu.find(stone[0]));
+
+        return N - seen.size();
+    }
+}
+
+class DSU {
+    int[] parent;
+    public DSU(int N) {
+        parent = new int[N];
+        for (int i = 0; i < N; ++i)
+            parent[i] = i;
+    }
+    public int find(int x) {
+        if (parent[x] != x) parent[x] = find(parent[x]);
+        return parent[x];
+    }
+    public void union(int x, int y) {
+        parent[find(x)] = find(y);
+    }
+}
+```
+
+
 
