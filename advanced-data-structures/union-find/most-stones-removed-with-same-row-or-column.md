@@ -55,15 +55,15 @@ class Solution {
                 father[i] = i;
             }
         } 
-        
+
         private int find(int x) {
             if (father[x] == x) {
                 return x;
             }
-            
+
             return father[x] = find(father[x]);
         }
-        
+
         private void union(int a, int b) {
             int rootA = find(a);
             int rootB = find(b);
@@ -72,13 +72,13 @@ class Solution {
                 father[rootA] = rootB;
             }
         }
-        
+
         private int query() {
             // write your code here
             return count;
         }
     }
-    
+
     public int removeStones(int[][] stones) {
         int n = stones.length;
         UnionFind uf = new UnionFind(n);
@@ -90,11 +90,13 @@ class Solution {
                 }
             }
         }
-        
+
         return n - uf.query();
     }
 }
 ```
+
+对index进行union-find
 
 ```java
 class Solution {
