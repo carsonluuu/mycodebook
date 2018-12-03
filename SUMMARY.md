@@ -257,6 +257,7 @@
     * [\[Union Find\]Graph Connect Tree](advanced-data-structures/union-find/union-findgraph-connect-tree.md)
     * [Minimum Spanning Tree](advanced-data-structures/union-find/minimum-spanning-tree.md)
     * [Bricks Falling When Hit](advanced-data-structures/union-find/bricks-falling-when-hit.md)
+    * [Most Stones Removed with Same Row or Column](advanced-data-structures/union-find/most-stones-removed-with-same-row-or-column.md)
   * [3 Binary Index Tree](advanced-data-structures/binary-index-tree.md)
   * [4 Segment Tree](advanced-data-structures/segment-tree.md)
   * [5 TreeSet/TreeMap](advanced-data-structures/4-treemap.md)
