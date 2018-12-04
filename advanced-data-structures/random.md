@@ -1,5 +1,11 @@
 # Random
 
+包括一些和随机有关的问题
+
+### Reservoir Sampling
+
+很重要的随机理论
+
 ### Generate n different random numbers in Java
 
 java8
