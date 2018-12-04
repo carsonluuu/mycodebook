@@ -29,7 +29,7 @@ Output:
 
 **递归法：**
 
-对于链表，递归是用来代替我们的循环的，需要牢记。递归的参数往往是下一个节点。帮助函数返回必须得是tail了这里，所以需要一个帮助函数，因为主函数返回的是head。
+对于链表，递归执行顺序不一样，返回第一层的时候，下面几层都已经搞好了。递归的参数往往是下一个节点。帮助函数返回必须得是tail了这里，所以需要一个帮助函数，因为主函数返回的是head。
 
 ### Code
 
@@ -67,36 +67,29 @@ public Node flatten(Node head) {
 
 ```java
 public Node flatten(Node head) {
-    if (head == null) return null;
-    dfs(head);
+    helper(head);
     return head;
 }
 
-//return tail of the current level/branch
-private Node dfs(Node curr) {
-
-    if (curr.child != null) {           
-    // tail
-        Node c = dfs(curr.child);
-        c.next = curr.next;
-        if (curr.next != null) {
-            curr.next.prev = c;
+private Node helper(Node head) {
+    Node cur = head, pre = head;
+    while(cur != null) {
+        if(cur.child == null) {
+            pre = cur;
+            cur = cur.next;
+        } else {
+            Node tmp = cur.next;
+            Node child = helper(cur.child);
+            cur.next = cur.child;
+            cur.child.prev = cur;
+            cur.child = null;
+            child.next = tmp;
+            if (tmp != null) tmp.prev = child;
+            pre = child;
+            cur = tmp;
         }
-        curr.next = curr.child;
-        curr.child.prev = curr;
-        curr.child = null;
-
-        if (c.next == null) {
-            return c;
-        }
-        return dfs(c.next);
     }
-
-    if (curr.next == null) {
-        return curr;
-    }
-
-    return dfs(curr.next);
+    return pre;
 }
 ```
 
