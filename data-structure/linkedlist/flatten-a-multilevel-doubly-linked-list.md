@@ -38,7 +38,7 @@ public Node flatten(Node head) {
     if (head == null) {
         return head;
     }
-    
+
     Node curr = head;
     while (curr != null) {
         if (curr.child == null) {
@@ -47,7 +47,7 @@ public Node flatten(Node head) {
         } else {
             Node c = curr.child;
             Node next = curr.next;
-            
+
             curr.next = c;
             c.prev = curr;
             while (c.next != null) {
@@ -60,44 +60,44 @@ public Node flatten(Node head) {
             curr.child = null;
         }
     }
-    
+
     return head;
 }
 ```
 
 ```java
-    public Node flatten(Node head) {
-        if (head == null) return null;
-        dfs(head);
-        return head;
-    }
-    
-    //return tail of the current level/branch
-    private Node dfs(Node curr) {
+public Node flatten(Node head) {
+    if (head == null) return null;
+    dfs(head);
+    return head;
+}
 
-        if (curr.child != null) {           
-        // tail
-            Node c = dfs(curr.child);
-            c.next = curr.next;
-            if (curr.next != null) {
-                curr.next.prev = c;
-            }
-            curr.next = curr.child;
-            curr.child.prev = curr;
-            curr.child = null;
+//return tail of the current level/branch
+private Node dfs(Node curr) {
 
-            if (c.next == null) {
-                return c;
-            }
-            return dfs(c.next);
+    if (curr.child != null) {           
+    // tail
+        Node c = dfs(curr.child);
+        c.next = curr.next;
+        if (curr.next != null) {
+            curr.next.prev = c;
         }
-        
-        if (curr.next == null) {
-            return curr;
+        curr.next = curr.child;
+        curr.child.prev = curr;
+        curr.child = null;
+
+        if (c.next == null) {
+            return c;
         }
-        
-        return dfs(curr.next);
+        return dfs(c.next);
     }
+
+    if (curr.next == null) {
+        return curr;
+    }
+
+    return dfs(curr.next);
+}
 ```
 
 
