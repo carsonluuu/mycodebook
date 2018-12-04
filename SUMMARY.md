@@ -224,6 +224,8 @@
     * [Max Stack](data-structure/stack/max-stack.md)
   * [3 Queue/Deque](data-structure/queue.md)
     * Moving Average
+    * [Design Circular Queue](data-structure/queue/design-circular-queue.md)
+    * [Design Circular Deque](data-structure/queue/design-circular-deque.md)
   * [4 Heap](data-structure/5-heap.md)
     * [Median for Data Stram](data-structure/5-heap/median-for-data-stram.md)
   * [5 Interval](data-structure/interval.md)
