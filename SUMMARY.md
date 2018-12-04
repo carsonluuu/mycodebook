@@ -267,6 +267,7 @@
     * [My Calendar I](advanced-data-structures/4-treemap/my-calendar.md)
   * [6 Random](advanced-data-structures/random.md)
     * [Shuffle an Array](advanced-data-structures/random/shuffle-an-array.md)
+    * [Random Pick with Weight](advanced-data-structures/random/random-pick-with-weight.md)
 * [Common Methods ](common-method.md)
   * [1 Presum](data-structure/presum.md)
     * [Subarray Sum Equals K](data-structure/presum/subarray-sum-equals-k.md)
