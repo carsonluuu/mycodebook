@@ -218,6 +218,7 @@
     * [Find Cycle](data-structure/linkedlist/find-cycle.md)
     * [Palindrome Linked List](data-structure/linkedlist/palindrome-linked-list.md)
     * [Remove Duplicates](data-structure/linkedlist/remove-duplicates.md)
+    * [Flatten a Multilevel Doubly Linked List](data-structure/linkedlist/flatten-a-multilevel-doubly-linked-list.md)
   * [2 Stack](data-structure/stack.md)
     * [Min Stack](data-structure/stack/min-stack.md)
     * [Max Stack](data-structure/stack/max-stack.md)
