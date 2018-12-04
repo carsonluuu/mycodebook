@@ -73,8 +73,8 @@ public Node flatten(Node head) {
 
 private Node helper(Node head) {
     Node cur = head, pre = head;
-    while(cur != null) {
-        if(cur.child == null) {
+    while (cur != null) {
+        if (cur.child == null) {
             pre = cur;
             cur = cur.next;
         } else {
