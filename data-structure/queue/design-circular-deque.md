@@ -11,25 +11,25 @@ Your implementation should support following operations:
 * `deleteLast()`: Deletes an item from the rear of Deque. Return true if the operation is successful.
 * `getFront()`: Gets the front item from the Deque. If the deque is empty, return -1.
 * `getRear()`: Gets the last item from Deque. If the deque is empty, return -1.
-* `isEmpty()`: Checks whether Deque is empty or not. 
+* `isEmpty()`: Checks whether Deque is empty or not. 
 * `isFull()`: Checks whether Deque is full or not.
 
-###  **Example**
+### **Example**
 
 ```
 MyCircularDeque circularDeque = new MycircularDeque(3); // set the size to be 3
-circularDeque.insertLast(1);			// return true
-circularDeque.insertLast(2);			// return true
-circularDeque.insertFront(3);			// return true
-circularDeque.insertFront(4);			// return false, the queue is full
-circularDeque.getRear();  			// return 2
-circularDeque.isFull();				// return true
-circularDeque.deleteLast();			// return true
-circularDeque.insertFront(4);			// return true
-circularDeque.getFront();			// return 4
-
+circularDeque.insertLast(1);            // return true
+circularDeque.insertLast(2);            // return true
+circularDeque.insertFront(3);            // return true
+circularDeque.insertFront(4);            // return false, the queue is full
+circularDeque.getRear();              // return 2
+circularDeque.isFull();                // return true
+circularDeque.deleteLast();            // return true
+circularDeque.insertFront(4);            // return true
+circularDeque.getFront();            // return 4
 ```
 
-  
+### Note
 
+类似[Design Circular Queue](/data-structure/queue/design-circular-queue.md)
 
