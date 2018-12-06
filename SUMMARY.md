@@ -113,6 +113,7 @@
     * [Sum Root to Leaf Numbers](tree/sum-root-to-leaf-numbers.md)
   * [5 Level Order](tree/5-level-order.md)
     * [Level Order Traversal](tree/5-level-order/level-order.md)
+    * [Maximum Width of Binary Tree](tree/5-level-order/maximum-width-of-binary-tree.md)
   * [6 LCA](tree/6-lca.md)
     * [LCA](tree/lca.md)
     * [LCA II](tree/lca-ii.md)
