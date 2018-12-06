@@ -65,27 +65,27 @@ class Solution {
         }
         Node sentinel = new Node(-99, null, null);
         prev = sentinel;
-        
+
         helper(root);
-        
+
         prev.right = sentinel.right;
         sentinel.right.left = prev;
-        
+
         return sentinel.right;
-        
+
     }
-    
+
     private void helper(Node curr) {
         if (curr == null) {
             return;
         }
-        
+
         helper(curr.left);
-        
+
         prev.right = curr;
         curr.left = prev;
         prev = curr;
-        
+
         helper(curr.right);
     }
 }
@@ -119,37 +119,6 @@ public static TreeNode convert(TreeNode root){
         cur = node.right;
     }
     return head;
-}
-
-public static void main(String[] args){
-
-    TreeNode node1 = new TreeNode(1);
-    TreeNode node2 = new TreeNode(2);
-    TreeNode node3 = new TreeNode(3);
-    TreeNode node4 = new TreeNode(4);
-    TreeNode node5 = new TreeNode(5);
-    TreeNode node6 = new TreeNode(6);
-    TreeNode node7 = new TreeNode(7);
-    TreeNode node8 = new TreeNode(8);
-    TreeNode node9 = new TreeNode(9);
-    TreeNode node10 = new TreeNode(10);
-
-    node2.left = node1;
-    node2.right = node3;
-    node4.left = node2;
-    node4.right = node5;
-    node6.left = node4;
-    node6.right = node9;
-    node9.left = node8;
-    node8.left = node7;
-    node9.right = node10;
-
-    TreeNode head = convert(node6);
-
-    while(head != null){
-        System.out.print(" " + head.val);
-        head = head.right;
-    }
 }
 ```
 
