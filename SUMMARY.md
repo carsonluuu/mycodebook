@@ -122,6 +122,7 @@
     * [Smallest Deepest Subtree](tree/smallest-deepest-subtree.md)
   * [7 Build Tree](tree/7-serialize-and-deserialize.md)
     * [Build Maximum Binary Tree](tree/maximum-binary-tree.md)
+    * [Convert Sorted List to Binary Search Tree](tree/convert-sorted-array-to-binary-search-tree.md)
     * [Serialize Deserialize](tree/serializedeserialize.md)
     * [Verify Preorder Serialization of a Binary Tree](tree/verify-preorder-serialization-of-a-binary-tree.md)
   * [8 Distance](tree/8-distance.md)

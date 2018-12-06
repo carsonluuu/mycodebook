@@ -83,7 +83,7 @@ The maximum width existing in the fourth level with the length 8 (6,null,null,nu
 这题的核心：
 
 1. 层次遍历的实现（递归/迭代）
-2. 树孩子的index，最左边减去最右边：`left = 2 * index， right = 2 * index + 1`
+2. 树孩子的index，最右边减去最左边：`left = 2 * index， right = 2 * index + 1`
 
 ### Code
 
@@ -137,7 +137,7 @@ public int widthOfBinaryTree(TreeNode root) {
     if (root == null) {
         return res;
     }
-    
+
     return dfs(root, 0, 1, new ArrayList<>(), new ArrayList<>());
 }
 
@@ -146,18 +146,18 @@ private int dfs(TreeNode root, int level, int index,
     if (root == null) {
         return 0;
     }
-    
+
     if (level == start.size()) {
         start.add(index);
         end.add(index);
     } else {
         end.set(level, index);
     }
-    
+
     int curr = end.get(level) - start.get(level) + 1;
     int left = dfs(root.left, level + 1, index * 2, start, end);
     int right = dfs(root.right, level + 1, index * 2 + 1, start, end);
-    
+
     return Math.max(curr, Math.max(left, right));
 }
 ```
