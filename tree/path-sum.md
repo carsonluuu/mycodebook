@@ -93,7 +93,8 @@ public class Solution {
         return rst;
     }
 
-    private void findSum(ArrayList<ArrayList<Integer>> result, ArrayList<Integer> solution, TreeNode root, int sum){
+    private void findSum(ArrayList<ArrayList<Integer>> result, 
+                         ArrayList<Integer> solution, TreeNode root, int sum){
         if (root == null) {
             return;
         }
