@@ -295,6 +295,7 @@
     * [Merge k Sorted Arrays](data-structure/merge/merge-k-sorted-arrays.md)
     * [Merge k Sorted Intervals](data-structure/merge/merge-k-sorted-intervals.md)
   * [4 Buffer](data-structure/buffer.md)
+  * 5 Bucket
 * [Design/OOD](designood.md)
   * [Design Rate Limiter](designood/design-rate-limiter.md)
   * [Design Hit Counter](designood/design-hit-counter.md)
