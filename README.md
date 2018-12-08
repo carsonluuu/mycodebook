@@ -1,5 +1,7 @@
 # My Coding Book
 
+.md文件源代码都在GitHub上，可以直接从右边访问。安装gitbook，可以本地编译，见[https://github.com/GitbookIO/gitbook-cli](https://github.com/GitbookIO/gitbook-cli)
+
 12.07.2018 -- 目前还是一个半成品。
 
 | Category | Note |
