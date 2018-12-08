@@ -112,6 +112,7 @@
     * [Binary Tree Longest Consecutive Sequence II](tree/binary-tree-longest-consecutive-sequence-ii.md)
     * [Binary Tree Maximum Path Sum](tree/binary-tree-maximum-path-sum.md)
     * [Sum Root to Leaf Numbers](tree/sum-root-to-leaf-numbers.md)
+    * [Boundary of Binary Tree](tree/boundary-of-binary-tree.md)
   * [5 Level Order](tree/5-level-order.md)
     * [Level Order Traversal](tree/5-level-order/level-order.md)
     * [Maximum Width of Binary Tree](tree/5-level-order/maximum-width-of-binary-tree.md)
