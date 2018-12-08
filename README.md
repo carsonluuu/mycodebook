@@ -29,7 +29,7 @@
 
 09.02.2018 -- V 0.4.0 加入附录
 
-10.15.2018 -- V 0.5.0 和 V 0.6.0被跳过，期间完善了更细的子分类，已部署本地GitBook的localhost
+10.15.2018 -- V 0.6.0  V 0.5.0被版本跳过，部署本地GitBook的localhost效果不佳，期间完善了更细的子分类
 
 11.23.2018 -- V 0.7.0 本地备份至Github [https://github.com/carsonluuu/mycodebook](https://github.com/carsonluuu/mycodebook)
 
