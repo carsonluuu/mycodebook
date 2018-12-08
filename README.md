@@ -1,4 +1,4 @@
-# My Coding Book
+# [My Coding Book](https://luj.gitbook.io/code/)
 
 .md文件源代码都在GitHub上，可以直接从右边访问。安装gitbook，可以本地编译，见[https://github.com/GitbookIO/gitbook-cli](https://github.com/GitbookIO/gitbook-cli)
 
