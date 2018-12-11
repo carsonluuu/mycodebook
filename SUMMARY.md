@@ -78,6 +78,7 @@
   * [Coins In Line I](dynamic-programming/coins-in-line-i.md)
   * [Coins In Line II](dynamic-programming/coins-in-line-ii.md)
   * [Coins In Line III](dynamic-programming/coins-in-line-iii.md)
+  * [Minimum Swaps To Make Sequences Increasing](dynamic-programming/minimum-swaps-to-make-sequences-increasing.md)
 * [Tree](tree.md)
   * [0 Binary Search Tree](tree/bst.md)
     * [Count of Smaller Numbers After Self](tree/bst/0.md)
