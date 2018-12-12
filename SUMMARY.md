@@ -299,7 +299,7 @@
 * [Design/OOD](designood.md)
   * [Design Rate Limiter](designood/design-rate-limiter.md)
   * [Design Hit Counter](designood/design-hit-counter.md)
-  * Design Twitter
+  * [Design Twitter](designood/design-twitter.md)
 * [Bit Manipulation](bit-manipulation.md)
   * [A Sum B](bit-manipulation/a-sum-b.md)
 * [Appendix](appendix.md)
