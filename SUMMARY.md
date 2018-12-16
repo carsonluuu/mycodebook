@@ -299,6 +299,7 @@
   * [\# Tricky](data-structure/tricky.md)
     * [Maximum Product of Three Numbers](data-structure/tricky/maximum-product-of-three-numbers.md)
     * [Set Mismatch](data-structure/tricky/set-mismatch.md)
+    * [Find the Duplicate Number](data-structure/tricky/find-the-duplicate-number.md)
 * [Design/OOD](designood.md)
   * [Design Rate Limiter](designood/design-rate-limiter.md)
   * [Design Hit Counter](designood/design-hit-counter.md)
