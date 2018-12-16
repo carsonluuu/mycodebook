@@ -1,4 +1,4 @@
-# Maximum Product of Three Numbers
+# [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/description/)
 
 Given an integer array, find three numbers whose product is maximum and output the maximum product.
 
@@ -29,6 +29,10 @@ Output:
 找最小的两个数（对应负数情况）
 
 同时找最大的三个数
+
+```
+Math.max(min1 * min2 * max1, max1 * max2 * max3);
+```
 
 ### Code
 
