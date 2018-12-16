@@ -318,11 +318,10 @@
     * [GCD](appendix/math/gcd.md)
     * [Matrix Coordinate](appendix/math/matrix-coordinate.md)
     * Sqrt\(x\)
-  * [Bit](bit.md)
-    * Missing Number
   * [Sorting](appendix/sorting.md)
     * [Merge Sort](appendix/sorting/merge-sort.md)
     * [Quick Sort](appendix/sorting/quick-sort.md)
     * [Quick Select](appendix/sorting/quick-select.md)
   * [Multithreading](appendix/multithreading.md)
+    * [Synchronized](appendix/multithreading/synchronized.md)
 
