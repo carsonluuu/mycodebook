@@ -324,4 +324,5 @@
     * [Merge Sort](appendix/sorting/merge-sort.md)
     * [Quick Sort](appendix/sorting/quick-sort.md)
     * [Quick Select](appendix/sorting/quick-select.md)
+  * [Multithreading](appendix/multithreading.md)
 
