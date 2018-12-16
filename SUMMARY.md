@@ -324,4 +324,5 @@
     * [Quick Select](appendix/sorting/quick-select.md)
   * [Multithreading](appendix/multithreading.md)
     * [Synchronized](appendix/multithreading/synchronized.md)
+    * [Producer-Consumer](appendix/multithreading/producer-consumer.md)
 
