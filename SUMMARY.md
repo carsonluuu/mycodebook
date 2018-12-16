@@ -326,4 +326,8 @@
     * [Synchronized](appendix/multithreading/synchronized.md)
     * [Producer-Consumer](appendix/multithreading/producer-consumer.md)
     * [CountDownLatch](appendix/multithreading/countdownlatch.md)
+    * [Semaphore](appendix/multithreading/semaphore.md)
+    * [Thread Pool](appendix/multithreading/thread-pool.md)
+    * [DeadLock](appendix/multithreading/deadlock.md)
+    * [Inter-thread Communication](appendix/multithreading/inter-thread-communication.md)
 
