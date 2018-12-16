@@ -291,11 +291,13 @@
     * Flip 01String to Monotone Increasing
   * 2 Bucket
   * [3 Simulation](data-structure/3-simulation.md)
+  * [4 Buffer](data-structure/buffer.md)
   * [5 Merge](data-structure/merge.md)
     * [Merge k Sorted Lists](data-structure/merge/merge-k-sorted-lists.md)
     * [Merge k Sorted Arrays](data-structure/merge/merge-k-sorted-arrays.md)
     * [Merge k Sorted Intervals](data-structure/merge/merge-k-sorted-intervals.md)
-  * [4 Buffer](data-structure/buffer.md)
+  * [\# Tricky](data-structure/tricky.md)
+    * [Maximum Product of Three Numbers](data-structure/tricky/maximum-product-of-three-numbers.md)
 * [Design/OOD](designood.md)
   * [Design Rate Limiter](designood/design-rate-limiter.md)
   * [Design Hit Counter](designood/design-hit-counter.md)
