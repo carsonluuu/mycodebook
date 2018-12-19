@@ -112,7 +112,7 @@ Collections.sort(connections, new Comparator<Connection>() {
 
 Give a new alphabet, such as {c,b,a,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z}. Sort the string array according to the new alphabet
 
-### Example
+### Example - [Verifying an Alien Dictionary](https://leetcode.com/problems/verifying-an-alien-dictionary/description/)
 
 Given Alphabet =`{c,b,a,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z}`, String array =`{cab,cba,abc}`, return`{cba,cab,abc}`.
 
