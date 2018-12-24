@@ -106,6 +106,23 @@ Collections.sort(connections, new Comparator<Connection>() {
 });
 ```
 
+原生数组
+
+```java
+public int[][] multiSort(int[][] array) {
+    // Write your code here
+    Arrays.sort(array, new Comparator<int[]>() {
+        public int compare(int[] l, int[] r) {
+            if (l[1] != r[1]) {
+                return r[1] - l[1];
+            }
+            return l[0] - r[0];
+        }
+    });
+    return array;
+}
+```
+
 ## Coding Problem
 
 ### Description
