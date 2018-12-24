@@ -59,6 +59,29 @@ class Solution {
 }
 ```
 
+* ### Insert
+
+```java
+public ListNode insertNode(ListNode head, int val) {
+    // write your code here
+    ListNode node = new ListNode(val);
+    if (head == null) return node;
+    
+    ListNode dummy = new ListNode(-99);
+    dummy.next = head;
+    head = dummy;
+    
+    while (head.next != null && head.next.val < val) {
+        head = head.next;
+    }
+    
+    node.next = head.next;
+    head.next = node;
+    
+    return dummy.next;
+}
+```
+
 * ### Delete
 
 Remove Nth Node From End of List
@@ -314,7 +337,6 @@ private static void reversePrintList_iterative(ListNode head){
         System.out.print(ptr.val + ",");
     }
 }
-
 ```
 
 

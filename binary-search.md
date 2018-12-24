@@ -282,17 +282,17 @@ class Solution {
                 start = mid;
             }
         }   
-        
+
         if (target <= nums[start]) {
             return start;
         }
         else if (target <= nums[end]) {
             return end;
         }
-        
+
         return end + 1;
     }
-} 
+}
 ```
 
 
