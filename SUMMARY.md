@@ -83,6 +83,8 @@
   * [0 Binary Search Tree](tree/bst.md)
     * [Count of Smaller Numbers After Self](tree/bst/0.md)
     * [Verify Preorder Sequence in Binary Search Tree](tree/bst/verify-preorder-sequence-in-binary-search-tree.md)
+    * [Minimum Absolute Difference in BST](tree/bst/minimum-absolute-difference-in-bst.md)
+    * [Unique Binary Search Trees](tree/bst/unique-binary-search-trees.md)
   * [1 Traversal](tree/1-traversal.md)
     * [Binary Tree Inorder Traversal](tree/binary-tree-inorder-traversal.md)
     * [Binary Tree Preorder Traversal](tree/binary-tree-preorder-traversal.md)
