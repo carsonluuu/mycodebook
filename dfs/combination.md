@@ -1,12 +1,12 @@
 # Combination
 
-Given two integers _n _and _k_, return all possible combinations of _k _numbers out of 1 ... _n_.
+Given two integers _n \_and \_k_, return all possible combinations of _k \_numbers out of 1 ... \_n_.
 
 ### Example
 
 ```
 Input:
- n = 4, k = 2
+ n = 4, k = 2
 
 Output:
 [
@@ -25,6 +25,10 @@ Output:
 
 start从1开始
 
+Time: O\(n^min\(k, n - k\)\)
+
+Space: O\(n\)
+
 ### Code
 
 ```java
@@ -35,21 +39,21 @@ class Solution {
         helper(res, new ArrayList(), n, k, 1); //index starts from 1;
         return res;
     }
-    
+
     private static void helper(List<List<Integer>> res, 
                                List<Integer> list, int n, int k, int index) {
         if (k == 0) {
             res.add(new ArrayList<>(list));
             return;
         }
-        
+
         for (int i = index; i <= n; i++) {
             list.add(i);
             helper(res, list, n, k - 1, i + 1);
             list.remove(list.size() - 1);
         }
     }
-    
+
 }
 ```
 

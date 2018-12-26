@@ -21,6 +21,10 @@ For nums =`[1,2,3]`, the permutations are:
 
 使用 visited 数组记录某个数是否被放到 permutation 里了。
 
+Calling perm **O\(n \* n!\)** times \(as an upper bound\) and each call takes O\(n\) time, the total runtime will not exceed **O\(n^2 \* n!\)**
+
+Space: O\(n\)
+
 ### Code
 
 ```java
