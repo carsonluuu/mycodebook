@@ -88,6 +88,7 @@
     * [Unique Binary Search Trees](tree/bst/unique-binary-search-trees.md)
     * [Find Mode in Binary Search Tree](tree/bst/find-mode-in-binary-search-tree.md)
     * [Trim a Binary Search Tree](tree/bst/trim-a-binary-search-tree.md)
+    * [Validate Binary Search Tree](tree/bst/validate-binary-search-tree.md)
   * [1 Traversal](tree/1-traversal.md)
     * [Binary Tree Inorder Traversal](tree/binary-tree-inorder-traversal.md)
     * [Binary Tree Preorder Traversal](tree/binary-tree-preorder-traversal.md)

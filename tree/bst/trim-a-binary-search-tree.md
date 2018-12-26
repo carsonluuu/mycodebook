@@ -4,12 +4,11 @@ Given a binary search tree and the lowest and highest boundaries as`L`and`R`, tr
 
 ### **Example**
 
-**Example 1:**  
-
+**Example 1:**
 
 ```
 Input:
- 
+
     1
    / \
   0   2
@@ -19,21 +18,17 @@ Input:
 
 
 Output:
- 
+
     1
       \
        2
-
 ```
 
-
-
-**Example 2:**  
-
+**Example 2:**
 
 ```
 Input:
- 
+
     3
    / \
   0   4
@@ -47,13 +42,17 @@ Input:
 
 
 Output:
- 
+
       3
      / 
    2   
   /
  1
 ```
+
+### Note
+
+### Code
 
 
 
