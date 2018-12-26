@@ -15,7 +15,6 @@ Input:
 
 Output:
  true
-
 ```
 
 **Example 2:**
@@ -24,8 +23,8 @@ Output:
     5
    / \
   1   4
-     / \
-    3   6
+     / \
+    3   6
 
 Output:
  false
@@ -36,7 +35,7 @@ Explanation:
 
 ### Note
 
-中序遍历或者分治
+中序遍历或者分治（设置最大和最小的边界，根据现有的值的情况更新）
 
 ### Code
 
@@ -46,14 +45,14 @@ class Solution {
         if (root == null) return true;
         return helper(root, null, null);
     }
-    
+
     public boolean helper(TreeNode root, Integer min, Integer max){
         if (root == null) return true;
         if (min != null && root.val <= min) return false;
         if (max != null && root.val >= max) return false;
         return helper(root.left, min, root.val) && helper(root.right, root.val, max);
     }
-    
+
     public boolean isValidBST2(TreeNode root) { //acsending order for inorder BST
        if (root == null) return true;
        Stack<TreeNode> stack = new Stack<>();
@@ -70,7 +69,7 @@ class Solution {
        }
        return true;
     }
-    
+
 }
 ```
 
