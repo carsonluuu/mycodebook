@@ -57,7 +57,7 @@ class Solution {
             } else {
                 freq = 1;
             }
-            
+
             if (max == freq) {
                 ans.add(curr.val);
             } else if (freq > max) {
@@ -68,7 +68,7 @@ class Solution {
             prev = curr;
             curr = curr.right;
         }
-        
+
         int[] res = new int[ans.size()];
         for (int i = 0; i < res.length; i++) res[i] = ans.get(i);
         return res;
@@ -76,7 +76,7 @@ class Solution {
 }
 ```
 
-```
+```java
 public class Solution {
     List<Integer> ans = new ArrayList<>();
     Integer pre;
@@ -87,7 +87,7 @@ public class Solution {
         for (int i = 0; i < res.length; i++) res[i] = ans.get(i);
         return res;
     }
-    
+
     private void traverse(TreeNode root) {
         if (root == null) {
             return;
