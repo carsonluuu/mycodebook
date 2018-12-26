@@ -26,6 +26,7 @@
     * [Generate Parentheses](generate-parentheses.md)
     * [Generalized Abbreviation](generalized-abbreviation.md)
     * [Remove Invalid Parentheses](remove-invalid-parentheses.md)
+    * [Letter Case Permutation](letter-case-permutation.md)
   * [3 Search](dfs/3-search.md)
     * [N-Queens](dfs/n-queen.md)
     * [Sudoku](dfs/sudoku.md)

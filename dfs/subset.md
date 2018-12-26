@@ -30,6 +30,10 @@ If S =`[1,2,3]`, a solution is:
 * 更通用的DFS ：就是所谓的Backtracking，找到以某几个元素开头的并回复到之前到状态
 * BFS方法：分层输出
 
+Time O\(n\*2^n\)
+
+Space O\(n\)
+
 ### Code
 
 ```java
