@@ -62,7 +62,7 @@ class Solution {
             pre = cur;
             cur = cur.right;
         }
-        
+
         return res;
     }
 }

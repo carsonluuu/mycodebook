@@ -86,6 +86,7 @@
     * [Verify Preorder Sequence in Binary Search Tree](tree/bst/verify-preorder-sequence-in-binary-search-tree.md)
     * [Minimum Absolute Difference in BST](tree/bst/minimum-absolute-difference-in-bst.md)
     * [Unique Binary Search Trees](tree/bst/unique-binary-search-trees.md)
+    * [Find Mode in Binary Search Tree](tree/bst/find-mode-in-binary-search-tree.md)
   * [1 Traversal](tree/1-traversal.md)
     * [Binary Tree Inorder Traversal](tree/binary-tree-inorder-traversal.md)
     * [Binary Tree Preorder Traversal](tree/binary-tree-preorder-traversal.md)
