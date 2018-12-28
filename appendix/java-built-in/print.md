@@ -22,6 +22,25 @@ public class PrintArray {
     }
 
 }
+```
+
+```
+int mat[][] =
+{
+    { 1, 0, 1, 1, 1, 1, 0, 1, 1, 1 },
+    { 1, 0, 1, 0, 1, 1, 1, 0, 1, 1 },
+    { 1, 1, 1, 1, 1, 1, 0, 1, 0, 1 },
+    { 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 },
+    { 1, 1, 1, 0, 1, 1, 1, 0, 1, 0 },
+    { 1, 0, 1, 1, 1, 1, 0, 1, 0, 0 },
+    { 1, 0, 0, 0, 0, 0, 0, 0, 0, 1 },
+    { 1, 0, 1, 1, 1, 1, 0, 1, 1, 1 },
+    { 1, 1, 0, 0, 0, 0, 1, 0, 0, 1 }
+};
+
+List<List<Integer>> list = Arrays.stream(mat)
+        .map(row -> IntStream.of(row).boxed().collect(Collectors.toList()))
+        .collect(Collectors.toList());
 
 ```
 
