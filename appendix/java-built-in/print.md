@@ -24,7 +24,7 @@ public class PrintArray {
 }
 ```
 
-```
+```java
 int mat[][] =
 {
     { 1, 0, 1, 1, 1, 1, 0, 1, 1, 1 },
@@ -41,7 +41,6 @@ int mat[][] =
 List<List<Integer>> list = Arrays.stream(mat)
         .map(row -> IntStream.of(row).boxed().collect(Collectors.toList()))
         .collect(Collectors.toList());
-
 ```
 
 
