@@ -210,6 +210,7 @@
     * [Longest Palindromic Substring](string/6-palindrome/longest-palindromic-substring.md)
   * [7 Evaluation](string/7-evaluation.md)
     * [Solve the Equation](string/implementation/solve-the-equation.md)
+    * Simplify Path
   * [8 Binary String](string/6-binary-string.md)
     * [Count Binary Substrings](string/6-binary-string/count-binary-substrings.md)
   * [9 Parenthesis](string/9-parenthesis.md)
