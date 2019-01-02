@@ -256,6 +256,7 @@
     * [Meeting Room](data-structure/interval/meeting-room.md)
     * [Merge Two Sorted Interval List](data-structure/interval/merge-two-sorted-interval-list.md)
     * [Merge K Sorted Interval List](data-structure/interval/merge-k-sorted-interval-list.md)
+    * [Meeting Room2](data-structure/interval/meeting-room.md)
   * [6 Matrix](data-structure/matrix.md)
     * [Multiply Sparse Matrix](data-structure/matrix/multiply-sparse-matrix.md)
     * [Matrix Diagonal Traverse](data-structure/matrix/matrix-diagonal-traverse.md)
