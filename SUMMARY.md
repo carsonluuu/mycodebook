@@ -239,8 +239,8 @@
   * [2 Stack](data-structure/stack.md)
     * [Min Stack](data-structure/stack/min-stack.md)
     * [Max Stack](data-structure/stack/max-stack.md)
-    * [Implement Queue by Two Stacks](data-structure/stack/implement-queue-by-two-stacks.md)
-    * [Implement Stack by Two Queues](data-structure/stack/implement-stack-by-two-queues.md)
+    * [Implement Queue by Stacks](data-structure/stack/implement-queue-by-two-stacks.md)
+    * [Implement Stack by Queues](data-structure/stack/implement-stack-by-two-queues.md)
   * [3 Queue/Deque](data-structure/queue.md)
     * Moving Average
     * [Design Circular Queue](data-structure/queue/design-circular-queue.md)

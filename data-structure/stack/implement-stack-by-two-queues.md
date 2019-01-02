@@ -16,6 +16,10 @@ isEmpty() // return true
 
 ### Note
 
+push的时候，反过来搞一下 - O\(n\)
+
+其他O\(1\)
+
 ### Code
 
 ```java
@@ -28,7 +32,7 @@ public class Stack {
     public Stack() {
         q = new LinkedList<>();
     }
-    
+
     public void push(int x) {
         // write your code here
         q.offer(x);
