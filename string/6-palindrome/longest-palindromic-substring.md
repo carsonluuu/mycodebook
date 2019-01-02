@@ -8,7 +8,7 @@ s = "abcccccc" return "cccccc"
 
 ### Note
 
-
+首尾双指针
 
 ### Code
 
