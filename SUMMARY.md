@@ -206,7 +206,8 @@
     * [Maximum Swap](string/4-number/maximum-swap.md)
   * [5 Decode](string/5-decode.md)
     * [Decode String](string/5-decode/decode-string.md)
-  * 6 Palindrome
+  * [6 Palindrome](string/6-palindrome.md)
+    * [Longest Palindromic Substring](string/6-palindrome/longest-palindromic-substring.md)
   * [7 Evaluation](string/7-evaluation.md)
     * [Solve the Equation](string/implementation/solve-the-equation.md)
   * [8 Binary String](string/6-binary-string.md)
