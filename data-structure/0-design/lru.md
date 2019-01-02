@@ -26,7 +26,7 @@ cache.get(4);       // returns 4
 
 ### Note
 
-这里操作都需要是常数时间的，使用一个LinkedHashMap记录元素的键和值，同时使用一个HashMap，记录这个键和其之前的节点，方便进行移动操作。
+这里操作都需要是常数时间的，使用一个LinkedHashMap记录元素的键和值，同时使用一个HashMap，记录这个键和其之前的节点，方便进行移动操作，这个map注意一定要时刻更新。
 
 成员变量有总大小，当前大小，sentinel，tail 和 map：
 
