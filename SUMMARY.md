@@ -214,6 +214,7 @@
     * [Count Binary Substrings](string/6-binary-string/count-binary-substrings.md)
   * [9 Parenthesis](string/9-parenthesis.md)
     * [Valid Parenthesis String](string/9-parenthesis/valid-parenthesis-string.md)
+    * [Valid Parentheses](string/9-parenthesis/valid-parentheses.md)
 * [Binary Search](binary-search.md)
   * [First Bad Version](binary-search/first-bad-version.md)
   * [Search in a Big Sorted Array](binary-search/search-in-a-big-sorted-array.md)
