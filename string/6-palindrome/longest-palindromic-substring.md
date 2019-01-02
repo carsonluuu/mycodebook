@@ -8,7 +8,7 @@ s = "abcccccc" return "cccccc"
 
 ### Note
 
-首尾双指针
+首尾双指针 - O\(n\*n\)
 
 ### Code
 
