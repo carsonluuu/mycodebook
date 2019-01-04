@@ -21,14 +21,14 @@ public class Solution {
         // write your code here
         return quickSelect(nums, 0, nums.length - 1, k - 1);
     }
-    
+
     private static int quickSelect(int[] A, int start, int end, int k) {
         if (start == end) {
             return A[start];
         }
         int left = start, right = end;
         int pivot = A[(left + right) / 2];
-        
+
         while (left <= right) {
             while (left <= right && A[left] < pivot) {
                 left++;
@@ -42,10 +42,10 @@ public class Solution {
                 A[right--] = temp;
             }
         }
-        
+
         //start      right   left      end
         //                 |
-        
+
         if (right >= k && start <= right) {
             return quickSelect(A, start, right, k);
         } else if (left <= k && left <= end) {
@@ -70,7 +70,7 @@ class Solution {
         // write your code here
         return quickSelect(nums, 0, nums.length - 1, k);
     }
-    
+
     private static int quickSelect(int[] nums, int start, 
                                  int end, int k) {
         if (start >= end) {
@@ -91,7 +91,7 @@ class Solution {
                 nums[right--] = temp;
             }
         }
-        
+
         if (start + k - 1 <= right) {
             return quickSelect(nums, start, right, k);
         }
