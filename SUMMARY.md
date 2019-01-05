@@ -232,6 +232,7 @@
 * [Data Structures](data-structure.md)
   * [0 Design](data-structure/0-design.md)
     * [LRU](data-structure/0-design/lru.md)
+    * [LFU](data-structure/0-design/lfu.md)
   * [1 LinkedList](data-structure/linkedlist.md)
     * [Merge Sort](data-structure/linkedlist/merge-sort.md)
     * [Find Cycle](data-structure/linkedlist/find-cycle.md)
