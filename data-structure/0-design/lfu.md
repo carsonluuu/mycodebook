@@ -27,7 +27,30 @@ cache.get(4);       // returns 4
 
 ### Note
 
+比较复杂，需要两个哈希表存储键映射和频率映射
 
+```
+// for key and value
+private HashMap<Integer, Entry> cache;
+// for freq and elems
+private HashMap<Integer, LinkedHashSet<Entry>> countMap;
+```
+
+countMap存储的value是哈希set链表，来决定当tie的情况出现的most recent的顺序
+
+min存储的全局最least的频率
+
+操作就是基于这些表和变量的维护：
+
+* Get操作，都要移除/更新原来的countMap的LinkedHashSet：
+* * 这个key是最小的频率，且value空了：那么节约空间，把整个key-value删去
+  * 然后更新countMap的频率，加入LinkedHashSet
+* Put操作：
+* * 如果存在，更新一下，然后退出
+  * 如果满了，就evicting the least freq one，那么遍历min对应的LinkedHashSet，然后删最least recent的，如果删空了，节约空间，就把删整个key-value
+  * 最后就是创建新的的情况，min就是它，它就是1，加入1对应的LinkedHashSet
+
+总结就是不停更新countMap，表值的LinkedHashSet来handle最不recent的情况
 
 ### Code
 
@@ -60,7 +83,7 @@ class LFUCache {
             count = c;
         }
     }
-    
+
     // for key and value
     private HashMap<Integer, Entry> cache;
     // for freq and elems
@@ -69,14 +92,14 @@ class LFUCache {
     private int capacity;
     // min freq
     private int min = -1;
-    
+
     public LFUCache(int capacity) {
         this.capacity = capacity;
         cache = new HashMap<>();
         countMap = new HashMap<>();
         countMap.put(1, new LinkedHashSet<>());
     }
-    
+
     public int get(int key) {
         // key not found
         if (!cache.containsKey(key)) {
@@ -90,17 +113,17 @@ class LFUCache {
             countMap.remove(e.count);
             min++;
         }
-        
+
         //update the freq after adding one
         e.count++;
         if (!countMap.containsKey(e.count)) {
             countMap.put(e.count, new LinkedHashSet<>());
         }
         countMap.get(e.count).add(e);
-        
+
         return e.val;
     }
-    
+
     public void put(int key, int value) {
         if (capacity <= 0) return;
         // 1. having the key then we update (need to get(key) to add freq)
@@ -119,7 +142,7 @@ class LFUCache {
             // set empty then remove key
             if (!it.hasNext()) countMap.remove(min);
         }
-        
+
         // 3. new one is created
         Entry newE = new Entry(key, value, 1);
         cache.put(key, newE);
