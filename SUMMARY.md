@@ -178,6 +178,7 @@
     * [Permutation in String](two-pointers/sliding-windows/permutation-in-string.md)
     * [Find All Anagrams in a String](two-pointers/sliding-windows/find-all-anagrams-in-a-string.md)
     * [Longest Substring with At Most K Distinct Characters](two-pointers/sliding-windows/longest-substring-with-at-most-k-distinct-characters.md)
+    * [Max Consecutive Ones II](two-pointers/sliding-windows/max-consecutive-ones-ii.md)
   * [4 Sum](two-pointers/2-sum.md)
     * [Two Sum](two-pointers/two-sum.md)
     * [Two Sum - Unique Pairs](two-pointers/two-sum-unique-pairs.md)
