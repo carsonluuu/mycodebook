@@ -179,6 +179,8 @@
     * [Find All Anagrams in a String](two-pointers/sliding-windows/find-all-anagrams-in-a-string.md)
     * [Longest Substring with At Most K Distinct Characters](two-pointers/sliding-windows/longest-substring-with-at-most-k-distinct-characters.md)
     * [Max Consecutive Ones II](two-pointers/sliding-windows/max-consecutive-ones-ii.md)
+    * [Minimum Size Subarray Sum](two-pointers/sliding-windows/minimum-size-subarray-sum.md)
+    * [Longest Substring Without Repeating Characters](two-pointers/sliding-windows/longest-substring-without-repeating-characters.md)
   * [4 Sum](two-pointers/2-sum.md)
     * [Two Sum](two-pointers/two-sum.md)
     * [Two Sum - Unique Pairs](two-pointers/two-sum-unique-pairs.md)
