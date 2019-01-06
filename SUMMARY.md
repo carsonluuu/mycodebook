@@ -324,6 +324,7 @@
     * [Find Difference](data-structure/tricky/find-difference.md)
     * [Find the Celebrity](data-structure/tricky/find-the-celebrity.md)
     * [Find All Duplicates in an Array](data-structure/tricky/find-all-duplicates-in-an-array.md)
+    * [Find All Numbers Disappeared in an Array](data-structure/tricky/find-all-numbers-disappeared-in-an-array.md)
 * [Design/OOD](designood.md)
   * [Design Rate Limiter](designood/design-rate-limiter.md)
   * [Design Hit Counter](designood/design-hit-counter.md)
