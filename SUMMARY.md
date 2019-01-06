@@ -308,7 +308,7 @@
     * [Min/Max Subarry](data-structure/presum/minmax-subarry.md)
     * [Contiguous 01-Array](data-structure/presum/contiguous-01-array.md)
     * Flip 01String to Monotone Increasing
-  * 2 Bucket
+  * [2 Bucket](data-structure/2-bucket.md)
   * [3 Simulation](data-structure/3-simulation.md)
   * [4 Buffer](data-structure/buffer.md)
   * [5 Merge](data-structure/merge.md)
@@ -323,6 +323,7 @@
     * [Single Number](data-structure/tricky/single-number.md)
     * [Find Difference](data-structure/tricky/find-difference.md)
     * [Find the Celebrity](data-structure/tricky/find-the-celebrity.md)
+    * [Find All Duplicates in an Array](data-structure/tricky/find-all-duplicates-in-an-array.md)
 * [Design/OOD](designood.md)
   * [Design Rate Limiter](designood/design-rate-limiter.md)
   * [Design Hit Counter](designood/design-hit-counter.md)
