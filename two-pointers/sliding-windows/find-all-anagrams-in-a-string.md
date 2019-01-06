@@ -39,9 +39,7 @@ The substring with start index = 2 is "ab", which is an anagram of "ab".
 
 ### Note
 
-Fixed length of the window size.
-
-Take the templet one.
+同上一题的吧
 
 ### Code
 

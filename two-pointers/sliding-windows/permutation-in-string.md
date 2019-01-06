@@ -29,6 +29,8 @@ Output:
 
 ### Note
 
+定长的比较直接，一边出一个，一边进一个，进出的时候维持好对应的逻辑
+
 Fixed length of the window size.
 
 Take the templet one.

@@ -181,6 +181,7 @@
     * [Max Consecutive Ones II](two-pointers/sliding-windows/max-consecutive-ones-ii.md)
     * [Minimum Size Subarray Sum](two-pointers/sliding-windows/minimum-size-subarray-sum.md)
     * [Longest Substring Without Repeating Characters](two-pointers/sliding-windows/longest-substring-without-repeating-characters.md)
+    * [Minimum Window Substring](two-pointers/sliding-windows/minimum-window-substring.md)
   * [4 Sum](two-pointers/2-sum.md)
     * [Two Sum](two-pointers/two-sum.md)
     * [Two Sum - Unique Pairs](two-pointers/two-sum-unique-pairs.md)
