@@ -163,6 +163,7 @@
   * [All Paths From Source to Target](bfs/all-paths-from-source-to-target.md)
   * [Graph Valid Tree](bfs/graph-valid-tree.md)
   * [Number of Connected Components in an Undirected Graph](bfs/number-of-connected-components-in-an-undirected-graph.md)
+  * [Minimum Height Trees](bfs/minimum-height-trees.md)
 * [Two Pointers](two-pointers.md)
   * [1 Forward](two-pointers/1-forward.md)
     * [Moving Zeros](two-pointers/moving-zeros.md)
