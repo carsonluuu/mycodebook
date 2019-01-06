@@ -41,7 +41,11 @@ Output:
 
 ### Note
 
+使用类似拓扑排序的思路进行解题。
 
+关键是要注意到这是一个无向图的问题，我们需要从外层向内部进行遍历，基于入度进行排序，一层一层把叶子删去，更新下一层的入度，进队列，最后剩下的节点就是答案
+
+入度这里指的是联通性，最低是1，我们从1开始“删除”
 
 ### Code
 
@@ -53,12 +57,12 @@ class Solution {
             res.add(0);
             return res;
         }
-        
+
         Map<Integer, Set<Integer>> graph = new HashMap<>();
         for (int i = 0; i < n; i++) {
             graph.put(i, new HashSet<Integer>());
         }
-        
+
         int[] indegree = new int[n];
         for (int i = 0; i < edges.length; i++) {
             int u = edges[i][0];
@@ -68,14 +72,14 @@ class Solution {
             indegree[u]++;
             indegree[v]++;
         }
-        
+
         Queue<Integer> q = new LinkedList<>();
         for (int i = 0; i < n; i++) {
             if (indegree[i] == 1) {
                 q.offer(i);
             }
         }
-        
+
         while (!q.isEmpty()) {
             int size = q.size();
             res = new ArrayList<Integer>();
