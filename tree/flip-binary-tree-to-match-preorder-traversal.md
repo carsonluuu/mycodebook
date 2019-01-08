@@ -1,16 +1,16 @@
 # [Flip Binary Tree To Match Preorder Traversal](https://leetcode.com/problems/flip-binary-tree-to-match-preorder-traversal/discuss/214216/JavaC++Python-DFS-Solution)
 
-Given a binary tree with`N`nodes, each node has a different value from `{1, ..., N}`.
+Given a binary tree with`N`nodes, each node has a different value from `{1, ..., N}`.
 
-A node in this binary tree can be _flipped_ by swapping the left child and the right child of that node.
+A node in this binary tree can be _flipped_ by swapping the left child and the right child of that node.
 
-Consider the sequence of `N`values reported by a preorder traversal starting from the root.  Call such a sequence of`N`values the _voyage_ of the tree.
+Consider the sequence of `N`values reported by a preorder traversal starting from the root.  Call such a sequence of`N`values the _voyage_ of the tree.
 
-\(Recall that a_preorder traversal_ of a node means we report the current node's value, then preorder-traverse the left child, then preorder-traverse the right child.\)
+\(Recall that a_preorder traversal_ of a node means we report the current node's value, then preorder-traverse the left child, then preorder-traverse the right child.\)
 
 Our goal is to flip the **least number **of nodes in the tree so that the voyage of the tree matches the`voyage`we are given.
 
-If we can do so, then return a list of the values of all nodes flipped.  You may return the answer in any order.
+If we can do so, then return a list of the values of all nodes flipped.  You may return the answer in any order.
 
 If we cannot do so, then return the list`[-1]`.
 
@@ -47,6 +47,8 @@ Output:
 
 逻辑就是进行前序遍历树，同时遍历数组，在相等的遇到不相等的左孩子，就反转，然后递归，如果遇到不相等的情况，就直接返回false
 
+实现上可以递归分治，也可以栈做前序遍历
+
 ### Code
 
 ```java
@@ -60,7 +62,7 @@ public List<Integer> flipMatchVoyage(TreeNode root, int[] voyage) {
         if (curr == null) { continue; }
         if (curr.val != voyage[i++]) { return Arrays.asList(-1); }
         if (curr.right != null && curr.right.val == voyage[i]) {
-            if (curr.left != null) {
+            if (curr.left != null) { // 针对1-null-2，【1，2】的情况
                 res.add(curr.val);
             }
             s.push(curr.left);
@@ -70,7 +72,7 @@ public List<Integer> flipMatchVoyage(TreeNode root, int[] voyage) {
             s.push(curr.left);
         }
     }
-    
+
     return res;
 }
 ```
