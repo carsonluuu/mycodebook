@@ -1,10 +1,9 @@
 # [Word Distance](https://leetcode.com/problems/shortest-word-distance-ii/description/)
 
-Design a class which receives a list of words in the constructor, and implements a method that takes two words _word1 _and _word2 _and return the shortest distance between these two words in the list. 
+Design a class which receives a list of words in the constructor, and implements a method that takes two words \_word1 \_and \_word2 \_and return the shortest distance between these two words in the list.
 
 ### **Example**
 
-  
 Assume that words =`["practice", "makes", "perfect", "coding", "makes"]`.
 
 ```
@@ -21,7 +20,7 @@ word2 = "coding"
 Output: 1
 ```
 
-###  Note 1
+### Note 1
 
 **只call一次的normal情况**
 
@@ -107,6 +106,14 @@ HashMap<String, List<Integer>> map;
 
 标示一下是否是相同的单词，不是相同的就正常处理，相同就单独处理一下
 
+当遍历单词与单词1相同时，如果是same的话，two就更新为one
+
+```java
+if (same) {
+    two = one; //former one
+}
+```
+
 ### Code 3
 
 ```java
@@ -127,7 +134,7 @@ public int shortestWordDistance(String[] words, String word1, String word2) {
             res = Math.min(res, Math.abs(one - two));
         }
     }
-    
+
     return res;
 }
 ```
