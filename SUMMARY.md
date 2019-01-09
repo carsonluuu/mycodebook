@@ -334,6 +334,7 @@
     * [Single Number](data-structure/tricky/single-number.md)
     * [Find Difference](data-structure/tricky/find-difference.md)
     * [Find the Celebrity](data-structure/tricky/find-the-celebrity.md)
+    * [Word Distance](data-structure/tricky/word-distance.md)
 * [Design/OOD](designood.md)
   * [Design Rate Limiter](designood/design-rate-limiter.md)
   * [Design Hit Counter](designood/design-hit-counter.md)
