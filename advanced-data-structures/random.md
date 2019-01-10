@@ -32,5 +32,48 @@ public static void main(final String[] args) throws Exception {
 }
 ```
 
+### Multiple Calls with Non-repeated results
+
+```java
+public class RandomGetAds {
+    int len;
+    final Random random = new Random();
+    RandomGetAds(String[] ads) {
+        this.len = ads.length;
+    }
+
+    // O(1)
+    public void randomGetAds(String[] ads) {
+        if (len == 0) {
+            System.out.println("all ads have been output");
+        }
+        int index = random.nextInt(len);
+        System.out.println(ads[index]);
+
+        moveToTail(ads, index, len);
+        len--;
+    }
+
+    private void moveToTail(String[] ads, int index, int len) {
+        String temp = ads[index];
+        ads[index] = ads[len - 1];
+        ads[len - 1] = temp;
+    }
+
+    public static void main(String[] args) {
+        String[] ads = {"a", "b", "c", "d", "e", "f"};
+        RandomGetAds r = new RandomGetAds(ads);
+        // should out distinct ones
+        r.randomGetAds(ads);
+        r.randomGetAds(ads);
+        r.randomGetAds(ads);
+        r.randomGetAds(ads);
+        r.randomGetAds(ads);
+        r.randomGetAds(ads);
+    }
+}
+
+```
+
 
 

@@ -60,54 +60,49 @@ public class MinStack {
 }
 ```
 
-优化版
+优化版 - 存差值，只用一个栈，缺点是需要数字类型转换，最大值减最小值会越界
 
 ```java
-class MinStack {
+public class MinStack {
+    long min;
+    Stack<Long> stack;
 
-    private Stack<Integer> stack;
-    private Stack<Integer> minstack;
-    /** initialize your data structure here. */
-    public MinStack() {
-        stack = new Stack<>();
-        minstack = new Stack<>();
+    public MinStack(){
+        stack=new Stack<>();
     }
-
+    
     public void push(int x) {
-        stack.push(x);
-        if (!minstack.isEmpty()) {
-            int min = minstack.peek();
-            if (x <= min)
-                minstack.push(x);
-        } else {
-            minstack.push(x);
+        if (stack.isEmpty()){
+            stack.push(0L);
+            min=x;
+        }else{
+            stack.push(x-min);//Could be negative if min value needs to change
+            if (x<min) min=x;
         }
     }
 
     public void pop() {
-        int x = stack.pop();
-        if (!minstack.isEmpty() && x == minstack.peek()) {
-            minstack.pop();
-        }
+        if (stack.isEmpty()) return;
+        
+        long pop=stack.pop();
+        
+        if (pop<0)  min=min-pop;//If negative, increase the min value
+        
     }
 
     public int top() {
-        return stack.peek();
+        long top=stack.peek();
+        if (top>0){
+            return (int)(top+min);
+        }else{
+           return (int)(min);
+        }
     }
 
     public int getMin() {
-        return minstack.peek();
+        return (int)min;
     }
 }
-
-/**
- * Your MinStack object will be instantiated and called as such:
- * MinStack obj = new MinStack();
- * obj.push(x);
- * obj.pop();
- * int param_3 = obj.top();
- * int param_4 = obj.getMin();
- */
 ```
 
 
