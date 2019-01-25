@@ -18,14 +18,14 @@ Input: "cbacdcbc"
 Output: "acdb"
 ```
 
-###  Note
+### Note
 
 维护一个单调递增的栈，栈内元素唯一。同时维护一个counting map
 
 遍历元素，对于栈：
 
 * 遇到栈内出现的元素，跳过
-* 遇到栈顶元素比当前元素大的，根据counting map的情况进行pop
+* 遇到栈顶元素比当前元素大的，根据counting map的情况进行pop（贪心法则：不是唯一的，那么我们到后面再去加它）
 
 遍历元素，对于counting map：
 
@@ -42,7 +42,7 @@ class Solution {
         for (char c : S.toCharArray()) {
             set[c - 'a']++;    
         }
-        
+
         for (char c : S.toCharArray()) {
             set[c - 'a']--;
             if (visited.contains(c)) { continue; }
@@ -52,12 +52,12 @@ class Solution {
             s.push(c);
             visited.add(c);
         }
-        
+
         StringBuilder sb = new StringBuilder();
         while (!s.isEmpty()) {
             sb.append(s.pop());
         }
-        
+
         return sb.reverse().toString();
     }
 }
