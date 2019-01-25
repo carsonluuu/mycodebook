@@ -20,7 +20,7 @@ Output: "acdb"
 
 ### Note
 
-维护一个单调递增的栈，栈内元素唯一。同时维护一个counting map
+维护一个严格单调递增的栈，栈内元素唯一。同时维护一个counting map
 
 遍历元素，对于栈：
 
