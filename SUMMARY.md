@@ -299,6 +299,7 @@
     * [Largest Rectangle in Histogram](advanced-data-structures/3-monotone-stack/largest-rectangle-in-histogram.md)
     * [Maximal Rectangle](advanced-data-structures/3-monotone-stack/maximal-rectangle.md)
     * [Remove K Digits](advanced-data-structures/3-monotone-stack/remove-k-digits.md)
+    * [Remove Duplicate Letters](advanced-data-structures/3-monotone-stack/remove-duplicate-letters.md)
   * [4 TreeSet/TreeMap](advanced-data-structures/4-treemap.md)
     * [My Calendar I](advanced-data-structures/4-treemap/my-calendar.md)
   * [5 Random](advanced-data-structures/random.md)
