@@ -83,7 +83,8 @@ Output:
 6. 除此之外，依次遍历所有可能的 curVal parse，按三种不同的可能操作做 dfs + backtracking;
    - 加法：直接算，prevVal 参数传 curVal，代表上一步是加法；
    - 减法：直接算，prevVal 参数传 -curVal，代表上一步是减法；
-   - 乘法：要先减去 prevVal 抹去上一步的计算，然后加上 prevVal curVal 代表当前值；同时传的 preVal 参数也等于 prevVal curVal. 
+   - 乘法：要先减去 prevVal 抹去上一步的计算，然后加上 prevVal curVal 代表当前值；
+     同时传的 preVal 参数也等于 prevVal curVal. 
    - 乘法操作这种处理方式，在遇到连续乘法的时候可以看到是叠加的；但是前一步操作如果不是乘法，则可以优先计算乘法操作。
 
 10-5-2x6 ，遇到乘法之前是 cumuVal = 3, preVal = -2; 

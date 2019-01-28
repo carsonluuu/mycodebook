@@ -54,9 +54,9 @@ candidates[i] > target 或 target < 0 (作为递归出口)
 
 可以重复选取元素，在这种情况下index就不加一
 
-Time: let s = target / min\(nums\[i\]\) T = C\(s,1\) + C\(s, 2\) + ... + C\(s, s\) = 2^s﻿
+Time: let s = target / min\(nums\[i\]\) T = C\(s,1\) + C\(s, 2\) + ... + C\(s, s\) = 2^s
 
-Space: O\(target / min\(nums\[i\]\) \)﻿
+Space: O\(target / min\(nums\[i\]\) \)
 
 ### Code
 
