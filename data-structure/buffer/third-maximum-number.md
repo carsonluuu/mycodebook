@@ -50,7 +50,7 @@ Both numbers with value 2 are both considered as second maximum.
 
 ### Code
 
-```
+```java
 class Solution {
     public int thirdMax(int[] nums) {
         Integer max1 = null, max2 = null, max3 = null;
@@ -69,7 +69,7 @@ class Solution {
                 max3 = n;
             }
         }
-        
+
         return max3 == null ? max1 : max3;
     }
 }
