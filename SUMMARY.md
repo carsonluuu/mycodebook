@@ -326,10 +326,11 @@
     * Read N Characters Given Read4 II - Call multiple times
     * Read N Characters Given Read4
     * [Third Maximum Number](data-structure/buffer/third-maximum-number.md)
-  * [5 Merge](data-structure/merge.md)
+  * [5 Merge/Union](data-structure/merge.md)
     * [Merge k Sorted Lists](data-structure/merge/merge-k-sorted-lists.md)
     * [Merge k Sorted Arrays](data-structure/merge/merge-k-sorted-arrays.md)
     * [Merge k Sorted Intervals](data-structure/merge/merge-k-sorted-intervals.md)
+    * [Intersection of Three Sorted Array](data-structure/merge/intersection-of-three-sorted-array.md)
   * [\# Tricky](data-structure/tricky.md)
     * [Maximum Product of Three Numbers](data-structure/tricky/maximum-product-of-three-numbers.md)
     * [Set Mismatch](data-structure/tricky/set-mismatch.md)
