@@ -82,5 +82,23 @@ public class Solution {
 }
 ```
 
+贴一个类似快慢指针的O\(1\)空间的做法：
+
+p1, p2分别从A，B出发， 向root方向遍历。 p1达到root之后， 从B开始重新向root遍历。p2达到root之后， 从A开始重新向root遍历。
+
+p1和p2在第二次遍历时，一定会在第一个intersection（i.e LCA）相遇。 时间复杂度O\(h\)，h是数的最大高度
+
+```java
+public ParentTreeNode lowestCommonAncestorII(ParentTreeNode root, ParentTreeNode A, ParentTreeNode B) {
+    // write your code here
+    ParentTreeNode p1 = A, p2 = B;
+    while (p1 != p2) {
+        p1 = p1.parent == null ? B : p1.parent;
+        p2 = p2.parent == null ? A : p2.parent; 
+    }
+    return p1;
+}
+```
+
 
 
