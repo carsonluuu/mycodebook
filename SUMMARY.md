@@ -322,6 +322,7 @@
   * [4 Buffer](data-structure/buffer.md)
     * Read N Characters Given Read4 II - Call multiple times
     * Read N Characters Given Read4
+    * [Third Maximum Number](data-structure/buffer/third-maximum-number.md)
   * [5 Merge](data-structure/merge.md)
     * [Merge k Sorted Lists](data-structure/merge/merge-k-sorted-lists.md)
     * [Merge k Sorted Arrays](data-structure/merge/merge-k-sorted-arrays.md)
