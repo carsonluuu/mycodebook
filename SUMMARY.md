@@ -331,6 +331,8 @@
     * [Merge k Sorted Arrays](data-structure/merge/merge-k-sorted-arrays.md)
     * [Merge k Sorted Intervals](data-structure/merge/merge-k-sorted-intervals.md)
     * [Intersection of Three Sorted Array](data-structure/merge/intersection-of-three-sorted-array.md)
+    * [Intersection of Two Arrays](data-structure/merge/intersection-of-two-arrays.md)
+    * [Intersection of Two Arrays II](data-structure/merge/intersection-of-two-arrays-ii.md)
   * [\# Tricky](data-structure/tricky.md)
     * [Maximum Product of Three Numbers](data-structure/tricky/maximum-product-of-three-numbers.md)
     * [Set Mismatch](data-structure/tricky/set-mismatch.md)
