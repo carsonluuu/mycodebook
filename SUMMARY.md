@@ -148,6 +148,8 @@
     * [Flatten Binary Tree to Linked List](tree/flatten-binary-tree-to-linked-list.md)
     * [Binary Tree Upside Down](tree/binary-tree-upside-down.md)
     * [BST to Doubly LinkedList](tree/bst-to-doubly-linked-list.md)
+    * [Populating Next Right Pointers in Each Node](tree/populating-next-right-pointers-in-each-node.md)
+    * [Populating Next Right Pointers in Each Node II](tree/populating-next-right-pointers-in-each-node-ii.md)
   * [\# n-ary Tree](tree/n-ary-tree.md)
 * [Graph](gragh.md)
   * [1 General](bfs/1-general.md)
