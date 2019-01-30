@@ -24,7 +24,7 @@ Input: dividend = 7, divisor = -3
 Output: -2
 ```
 
-###  Note
+### Note
 
 corner case:
 
@@ -34,6 +34,13 @@ corner case:
 * 越界
 
 不停减除数然后加一
+
+```java
+while ((sum + sum) <= ldividend){
+    sum += sum;
+    multiple += multiple;
+}
+```
 
 ### Code
 
@@ -46,16 +53,16 @@ class Solution {
         long ldividend = Math.abs((long)dividend);
         long ldivisor = Math.abs((long)divisor);
         if(ldividend < ldivisor || ldividend == 0) return 0;
-        
+
         long lres = divide(ldividend, ldivisor);
-        
+
         if (lres > Integer.MAX_VALUE){
             res = (sign == 1) ? Integer.MAX_VALUE : Integer.MIN_VALUE;            
         } else res = (int)(sign * lres);
-        
+
         return res;
     }
-    
+
     public long divide(long ldividend, long ldivisor){
         if(ldividend < ldivisor) return 0;
         long sum = ldivisor;
