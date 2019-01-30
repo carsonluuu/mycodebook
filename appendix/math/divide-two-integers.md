@@ -42,6 +42,10 @@ while ((sum + sum) <= ldividend){
 }
 ```
 
+加等号会少跑一次
+
+时间空间都是O\(logn\)
+
 ### Code
 
 ```java
