@@ -204,6 +204,7 @@
 * [String](string.md)
   * [1 Pattern](string/1-pattern.md)
     * [Is Subsequence](string/1-pattern/is-subsequence.md)
+    * One Edit Distance
   * [2 Implementation](string/implementation.md)
     * [Find the Closest Palindrome](string/implementation/d.md)
   * [3 Substring](string/3-substring.md)
