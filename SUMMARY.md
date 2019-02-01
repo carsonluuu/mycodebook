@@ -309,6 +309,7 @@
   * [5 Random](advanced-data-structures/random.md)
     * [Shuffle an Array](advanced-data-structures/random/shuffle-an-array.md)
     * [Random Pick with Weight](advanced-data-structures/random/random-pick-with-weight.md)
+    * [Random Pick Index](advanced-data-structures/random/random-pick-index.md)
   * [6 Binary Index Tree](advanced-data-structures/binary-index-tree.md)
   * [7 Segment Tree](advanced-data-structures/segment-tree.md)
 * [Common Methods ](common-method.md)
