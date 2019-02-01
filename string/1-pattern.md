@@ -1,14 +1,14 @@
 # [One Edit Distance](https://leetcode.com/problems/one-edit-distance/description/)
 
-Given two strings**s** and**t**, determine if they are both one edit distance apart.
+Given two strings**s** and**t**, determine if they are both one edit distance apart.
 
 **Note:**
 
 There are 3 possiblities to satisfy one edit distance apart:
 
-1. Insert a character into _**s**_ to get _**t**_
-2. Delete a character from _**s **_to get _**t**_
-3. Replace a character of _**s**_ to get _**t**_
+1. Insert a character into _**s**_ to get _**t**_
+2. Delete a character from _**s **\_to get _**t**\_
+3. Replace a character of _**s**_ to get _**t**_
 
 ### Example
 
@@ -23,7 +23,7 @@ Output: true
 
 Explanation:
  We can insert 'c' into s
- to get t.
+ to get t.
 ```
 
 **Example 2:**
@@ -51,20 +51,20 @@ Output:
  true
 
 Explanation:
- We can replace '0' with '1' to get t.
+ We can replace '0' with '1' to get t.
 ```
 
 ### Note
 
 当当前位置不一样的时候，根据三种情况分别比较substring
 
-edge case "" and "1"，最后判断一下
+edge case 长度差一，最后多一位，最后判断一下
 
 ```
 Math.abs(s.length() - t.length()) == 1;
 ```
 
-### Code 
+### Code
 
 ```java
 public boolean isOneEditDistance(String s, String t) {
