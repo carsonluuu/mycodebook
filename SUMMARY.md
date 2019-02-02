@@ -277,6 +277,7 @@
   * [6 Matrix](data-structure/matrix.md)
     * [Multiply Sparse Matrix](data-structure/matrix/multiply-sparse-matrix.md)
     * [Matrix Diagonal Traverse](data-structure/matrix/matrix-diagonal-traverse.md)
+    * Valid Sudoku
   * [7 Iterator](data-structure/iterator.md)
     * [Flatten 2D Vector](data-structure/iterator/flat-2d-list.md)
     * [Pair Iterator](data-structure/iterator/pair-iterator.md)
