@@ -360,6 +360,7 @@
   * [Java Built-in](appendix/java-built-in.md)
     * [Comparator](appendix/java-built-in/comparator.md)
     * [Stream](appendix/java-built-in/print.md)
+    * [String Pool](appendix/java-built-in/string-pool.md)
   * [Math](appendix/math.md)
     * [GCD](appendix/math/gcd.md)
     * [Matrix Coordinate](appendix/math/matrix-coordinate.md)
