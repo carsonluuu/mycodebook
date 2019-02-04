@@ -1,6 +1,5 @@
 # Java
 
-  
 Java Keywords: import, super, final/finally/finalize, static, public, protected, private, synchronized
 
 **Abstract class and Interface\(both can’t be instantiated\)**:
@@ -52,8 +51,6 @@ which can be interpreted by JVM\(javac temp.java\)
 • Assembler takes the assembly code and converts into object code\(gcc -c .cpp\)
 
 • Linker links the object codes with library object file and forms an executable file
-
-
 
 **Memory Management:**
 
@@ -120,9 +117,10 @@ class Singleton {
 
 2. when get\(Key\), calculate the hash code of the key object to locate the bucket, then use equals\(\) method to match key objects and return the value
 
-* -&gt; exceed load factor: rehash the hash table and bucket to twice\(race condition\)
-* -&gt; collision: two key objects map to same bucket\(same hash code\)
-* -&gt; Hash Function: calculate hash code, return same result to same object
+3. exceed load factor: rehash the hash table and bucket to twice\(race condition\)
+
+4. collision: two key objects map to same bucket\(same hash code\)
+5. Hash Function: calculate hash code, return same result to same object
 
 •HashTable: differs with HashMap only by not permit null key or null value, use fast-fail iterator, synchronized
 
@@ -177,7 +175,7 @@ Exceptions:
 
 declaration of exception.
 
-• Throwable\(superclass\) 
+• Throwable\(superclass\)
 
 * -&gt; Error\(not catched\)
 * -&gt; Exception\(catched\)
@@ -194,6 +192,4 @@ declaration of exception.
 When try/catch has a return statement, flow jumps to finally then to return
 
 **Volatile**: the value of a volatile field becomes visible to all readers \(other threads in particular\) after a write operation completes on it
-
-
 
