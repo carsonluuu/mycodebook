@@ -215,6 +215,7 @@
     * [Maximum Swap](string/4-number/maximum-swap.md)
     * [Add Strings](string/4-number/add-strings.md)
     * [Nth Digit](string/4-number/nth-digit.md)
+    * [Compare Version Numbers](string/4-number/compare-version-numbers.md)
   * [5 Decode](string/5-decode.md)
     * [Decode String](string/5-decode/decode-string.md)
   * [6 Palindrome](string/6-palindrome.md)
