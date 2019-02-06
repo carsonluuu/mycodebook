@@ -1,7 +1,7 @@
 # [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/description/)
 
-Compare two version numbers_version1_and_version2_.  
-If_`version1`_`>`_`version2`_return`1;` if_`version1`_`<`_`version2`_return`-1;`otherwise return`0`.
+Compare two version numbers_version1\_and\_version2_.  
+If`version1>version2`_\_return_`1;`_ if_`version1<version2`\_return`-1;`otherwise return`0`.
 
 You may assume that the version strings are non-empty and contain only digits and the`.`character.
 
@@ -87,7 +87,7 @@ Explanation:
 
 ### Note
 
-
+比较各个位置和总长度
 
 ### Code
 
