@@ -141,6 +141,7 @@
     * [Convert Sorted List to Binary Search Tree](tree/convert-sorted-array-to-binary-search-tree.md)
     * [Serialize Deserialize](tree/serializedeserialize.md)
     * [Verify Preorder Serialization of a Binary Tree](tree/verify-preorder-serialization-of-a-binary-tree.md)
+    * [Construct Binary Tree from Traversals](tree/construct-binary-tree-from-traversals.md)
   * [8 Distance](tree/8-distance.md)
     * [Closest Leaf in a Binary Tree](gragh/closest-leaf-in-a-binary-tree.md)
     * [All Nodes Distance K in Binary Tree](gragh/all-nodes-distance-k-in-binary-tree.md)
