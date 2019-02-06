@@ -16,7 +16,7 @@ Return a deep copy of the list.
 
 ### Code
 
-```
+```java
 private void copyNext(RandomListNode head) {
     while (head != null) {
         RandomListNode newNode = new RandomListNode(head.label);
@@ -46,7 +46,7 @@ private RandomListNode splitList(RandomListNode head) {
         }
         head = head.next;
     }
-    
+
     return newHead;
 }
 
@@ -54,10 +54,10 @@ public RandomListNode copyRandomList(RandomListNode head) {
     if (head == null) {
         return head;
     }
-    
+
     copyNext(head);
     copyRandom(head);
-    
+
     return splitList(head);
 }
 ```
