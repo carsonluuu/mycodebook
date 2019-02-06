@@ -11,6 +11,12 @@ Return a deep copy of the list.
     然后第二遍copy的时候去建立边的copy， 拆分节点, 一边扫描一边拆成两个链表，
     这里用到两个dummy node。第一个链表变回 1->2->3 , 然后第二变成 1`->2`->3`
 
+`iter.next.random = iter.random.next`
+
+I believe now points to the "newly" created node, i.e. the copy, not the original node, which is later removed.
+
+Need deep copy, which means a new node to be created.
+
 ### Code
 
 ```java
