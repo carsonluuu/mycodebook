@@ -12,7 +12,7 @@ _\(Formally, a closed interval_`[a, b]`_\(with_`a <= b`_\) denotes the set of re
 
 ### Note
 
-双指针移动的标准是end谁小谁移动
+双指针移动的标准是end谁小谁移动，end小的不会再与另一个数组里面的相交了
 
 ### Code
 
@@ -55,7 +55,7 @@ class Solution {
                 j++;
             }
         }
-        
+
         return res.toArray(new Interval[res.size()]);
     }
 }
