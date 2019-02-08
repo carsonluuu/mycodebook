@@ -124,6 +124,7 @@
     * [Binary Tree Maximum Path Sum](tree/binary-tree-maximum-path-sum.md)
     * [Sum Root to Leaf Numbers](tree/sum-root-to-leaf-numbers.md)
     * [Boundary of Binary Tree](tree/boundary-of-binary-tree.md)
+    * [Smallest String Starting From Leaf](tree/smallest-string-starting-from-leaf.md)
   * [5 Level Order](tree/5-level-order.md)
     * [Level Order Traversal](tree/5-level-order/level-order.md)
     * [Maximum Width of Binary Tree](tree/5-level-order/maximum-width-of-binary-tree.md)
