@@ -32,6 +32,7 @@
     * [Sudoku](dfs/sudoku.md)
     * [Employee Importance](dfs/employee-importance.md)
     * [Increasing Subsequences](dfs/increasing-subsequences.md)
+    * [Nested List Weight Sum](dfs/nested-list-weight-sum.md)
   * [4 Flood Fill](dfs/4-traverse.md)
     * [Flood Fill](dfs/4-traverse/flood-fill.md)
   * [5 Path](dfs/path.md)
