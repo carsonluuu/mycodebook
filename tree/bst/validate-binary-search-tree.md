@@ -37,8 +37,6 @@ Explanation:
 
 中序遍历或者分治（设置最大和最小的边界，根据现有的值的情况更新）
 
-
-
 ### Code
 
 ```java
@@ -75,7 +73,7 @@ class Solution {
 }
 ```
 
-```
+```py
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
