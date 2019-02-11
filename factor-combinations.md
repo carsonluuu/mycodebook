@@ -77,7 +77,7 @@ public void helper(List<List<Integer>> result, List<Integer> item, int n, int st
         }
         return;
     }
-    
+
     for (int i = start; i <= n; ++i) {
         if (n % i == 0) {
             item.add(i);
@@ -86,6 +86,20 @@ public void helper(List<List<Integer>> result, List<Integer> item, int n, int st
         }
     }
 }
+```
+
+```py
+class Solution:
+    def getFactors(self, n: 'int') -> 'List[List[int]]':
+        def dfs(res, path, start, n):
+            while start*start <= n:
+                if n % start == 0:
+                    res.append(path + [start, n//start])
+                    dfs(res, path + [start], start, n//start)
+                start += 1
+        res = []
+        dfs(res, [], 2, n)
+        return res    
 ```
 
 
