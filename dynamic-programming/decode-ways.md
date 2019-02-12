@@ -23,7 +23,7 @@ Output:
  2
 
 Explanation:
- It could be decoded as "AB" (1 2) or "L" (12).
+ It could be decoded as "AB" (1 2) or "L" (12).
 ```
 
 **Example 2:**
@@ -36,7 +36,7 @@ Output:
  3
 
 Explanation:
- It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
+ It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
 ```
 
 ### Note
@@ -68,10 +68,10 @@ public int numDecodings(String s) {
 public int numDecodings(String s) {
     if (s == null || s.length() == 0) return 0;
     int len = s.length();
-    
+
     //ans from i-th position
     int[] memo = new int[len];
-    
+
     return helper(s, 0, memo);
 }
 
@@ -82,11 +82,11 @@ private int helper(String s, int start, int[] memo) {
     if (memo[start] > 0) {
         return memo[start];
     }
-    
+
     if (s.charAt(start) - '0' == 0) {
         return memo[start];
     } 
-    
+
     int res = 0;
     for (int i = start; i < start + 2 && i < s.length(); i++) {
         String prefix = s.substring(start, i + 1);
@@ -95,7 +95,7 @@ private int helper(String s, int start, int[] memo) {
         }
         res += helper(s, i + 1, memo);
     }
-    
+
     return res;
 }
 ```
