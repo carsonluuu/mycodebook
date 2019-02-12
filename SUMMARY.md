@@ -155,6 +155,7 @@
     * [BST to Doubly LinkedList](tree/bst-to-doubly-linked-list.md)
     * [Populating Next Right Pointers in Each Node](tree/populating-next-right-pointers-in-each-node.md)
     * [Populating Next Right Pointers in Each Node II](tree/populating-next-right-pointers-in-each-node-ii.md)
+    * [Invert Binary Tree](tree/invert-binary-tree.md)
   * [\# n-ary Tree](tree/n-ary-tree.md)
 * [Graph](gragh.md)
   * [1 General](bfs/1-general.md)
