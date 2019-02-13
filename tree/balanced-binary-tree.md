@@ -1,4 +1,4 @@
-# [Balanced Binary Tree](/tree/balanced-binary-tree.md)**Balanced Binary Tree**
+# [Balanced Binary Tree](/tree/balanced-binary-tree.md)
 
 Given a binary tree, determine if it is height-balanced.
 

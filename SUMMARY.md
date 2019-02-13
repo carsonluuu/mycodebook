@@ -105,6 +105,7 @@
     * [Max/Min Depth of Binary Tree ](tree/maximum-depth-of-binary-tree.md)
     * [Diameter of Tree](tree/diameter-of-tree.md)
     * [DiffSum](tree/diffsum.md)
+    * [Find Leaves of Binary Tree](tree/find-leaves-of-binary-tree.md)
   * [3 SubTree](tree/3-double-preorder.md)
     * [Same/Symmetric Tree](tree/samesymmetric-tree.md)
     * [TreeIsomorphism](tree/treeisomorphism.md)
