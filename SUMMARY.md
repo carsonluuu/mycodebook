@@ -273,6 +273,7 @@
     * [Kth Largest Data Stream](data-structure/topk/kth-largest-data-stream.md)
     * [Top K Words](data-structure/topk/top-k-words.md)
     * [Top K Elements](data-structure/topk/top-k-number.md)
+    * [Kth Smallest Number in Sorted Matrix](data-structure/5-heap/kth-smallest-number-in-sorted-matrix.md)
   * [5 Interval](data-structure/interval.md)
     * [Merge Intervals](data-structure/interval/merge-intervals.md)
     * [Insert Interval](data-structure/interval/insert-interval.md)

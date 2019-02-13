@@ -73,6 +73,8 @@ Explanation:
 
 对这个图进行topo排序
 
+注：可能有多个解的，这里没有给出正常顺序的最小序列，否则得用heapq来做拓扑排序
+
 ### Code
 
 ```java
@@ -133,7 +135,6 @@ public static String alienOrder(String[] words) {
     if (res.length() != count) return "";
     return res.toString();
 }
-
 ```
 
 
