@@ -7,8 +7,8 @@ Given a binary tree, collect a tree's nodes as if you were doing this: Collect a
 ```
 Input: 
 [1,2,3,4,5]
-  
-          
+
+
           1
          / \
         2   3
@@ -27,23 +27,19 @@ Output:
 ```
           1
          / 
-        2          
+        2
 ```
 
-
-
-2. Now removing the leaf`[2]`would result in this tree:
+1. Now removing the leaf`[2]`would result in this tree:
 
 ```
-          1          
+          1
 ```
 
-
-
-3. Now removing the leaf`[1]`would result in the empty tree:
+1. Now removing the leaf`[1]`would result in the empty tree:
 
 ```
-          []         
+          []
 ```
 
 ### Note
@@ -52,24 +48,24 @@ Output:
 
 ### Code
 
-```
+```java
 class Solution {
     public List<List<Integer>> findLeaves(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
         if (root == null) {
             return res;
         }
-        
+
         helper(root, res);
-        
+
         return res;
     }
-    
+
     private int helper(TreeNode root, List<List<Integer>> res) {
         if (root == null) {
             return -1;
         }
-        
+
         int level = 1 + Math.max(helper(root.left, res), 
                                  helper(root.right, res));
         if (res.size() == level) {
@@ -77,7 +73,7 @@ class Solution {
         }
         res.get(level).add(root.val);
         root.left = root.right = null;
-        
+
         return level;
     }
 }
