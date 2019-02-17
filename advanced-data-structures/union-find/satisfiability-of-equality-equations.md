@@ -1,12 +1,10 @@
 # [Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/description/)
 
-Given an arrayequations of strings that represent relationships between variables, each string`equations[i]` has length`4`and takes one of two different forms:`"a==b"`or`"a!=b"`.  Here,`a`and`b`are lowercase letters \(not necessarily different\) that represent one-letter variable names.
+Given an arrayequations of strings that represent relationships between variables, each string`equations[i]` has length`4`and takes one of two different forms:`"a==b"`or`"a!=b"`.  Here,`a`and`b`are lowercase letters \(not necessarily different\) that represent one-letter variable names.
 
-Return`true` if and only if it is possible to assign integers to variable names so as to satisfy all the given equations.
+Return`true` if and only if it is possible to assign integers to variable names so as to satisfy all the given equations.
 
 ### Example
-
-
 
 **Example 1:**
 
@@ -30,7 +28,6 @@ Output:
 true
 Explanation: 
 We could assign a = 1 and b = 1 to satisfy both equations.
-
 ```
 
 **Example 3:**
@@ -62,7 +59,9 @@ true
 
 ### Note
 
+静态联通性，使用Union-Find
 
+等号全部连接在一起，再单独判断不等号，如果连接：就false了
 
 ### Code
 
@@ -76,19 +75,19 @@ class Solution {
                 father[i] = i;
             }
         }
-        
+
         int find(int x) {
             if (x == father[x]) {
                return x;
             } 
-            
+
             return father[x] = find(father[x]);
         }
-        
+
         void union(int a, int b) {
             int rootA = find(a);
             int rootB = find(b);
-            
+
             if (rootA != rootB) {
                 father[rootA] = rootB;
             }
@@ -102,16 +101,16 @@ class Solution {
                 uf.union(a, b);
             }
         }
-        
+
         for (String elem : equations) {
             int a = elem.charAt(0) - 'a', b = elem.charAt(3) - 'a';
             if (elem.charAt(1) == '!' && uf.find(a) == uf.find(b)) {
                 return false;
             }
         }
-        
+
         return true;
-        
+
     }
 }
 ```
