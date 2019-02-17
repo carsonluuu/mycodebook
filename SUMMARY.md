@@ -312,6 +312,7 @@
     * [Minimum Spanning Tree](advanced-data-structures/union-find/minimum-spanning-tree.md)
     * [Bricks Falling When Hit](advanced-data-structures/union-find/bricks-falling-when-hit.md)
     * [Most Stones Removed with Same Row or Column](advanced-data-structures/union-find/most-stones-removed-with-same-row-or-column.md)
+    * [Satisfiability of Equality Equations](advanced-data-structures/union-find/satisfiability-of-equality-equations.md)
   * [3 Monotonous Stack](advanced-data-structures/3-monotone-stack.md)
     * [Increasing Triplet Subsequence](advanced-data-structures/3-monotone-stack/increasing-triplet-subsequence.md)
     * [Largest Rectangle in Histogram](advanced-data-structures/3-monotone-stack/largest-rectangle-in-histogram.md)
