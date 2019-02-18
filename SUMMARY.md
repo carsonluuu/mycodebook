@@ -141,6 +141,7 @@
     * [LCA IV](tree/lac-iv.md)
     * [Smallest Deepest Subtree](tree/smallest-deepest-subtree.md)
     * [LCA of a BST](tree/lca-of-a-bst.md)
+    * [Cousins in Binary Tree](tree/cousins-in-binary-tree.md)
   * [7 Build Tree](tree/7-serialize-and-deserialize.md)
     * [Build Maximum Binary Tree](tree/maximum-binary-tree.md)
     * [Convert Sorted List to Binary Search Tree](tree/convert-sorted-array-to-binary-search-tree.md)
