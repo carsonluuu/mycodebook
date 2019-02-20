@@ -41,6 +41,7 @@
   * [6 Memo](dfs/5-memo.md)
     * [Knight Dialer](dfs/path/knight-dialer.md)
     * [Regular Expression Matching](dfs/path/regular-expression-matching.md)
+    * [Wildcard Matching](dfs/path/wildcard-matching.md)
   * [\# Word Big Four](dfs/word-big-four.md)
     * [Word Break](dfs/word-big-four/word-break.md)
     * [Word Break II](dfs/word-big-four/word-break-ii.md)
