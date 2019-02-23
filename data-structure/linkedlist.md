@@ -24,12 +24,12 @@ public ListNode reverseList(ListNode head) {
     return reverseListInt(head, null);
 }
 
-private ListNode reverseListInt(ListNode head, ListNode prev) {
+private ListNode reverseListInt(ListNode prev, ListNode head) {
     if (head == null)
         return prev;
     ListNode next = head.next;
     head.next = prev;
-    return reverseListInt(next, head);
+    return reverseListInt(head, next);
 }
 ```
 
