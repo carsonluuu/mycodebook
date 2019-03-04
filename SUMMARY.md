@@ -28,6 +28,7 @@
     * [Remove Invalid Parentheses](remove-invalid-parentheses.md)
     * [Letter Case Permutation](letter-case-permutation.md)
     * [Factor Combinations](factor-combinations.md)
+    * [Find the Missing Number II](find-the-missing-number-ii.md)
   * [3 Search](dfs/3-search.md)
     * [N-Queens](dfs/n-queen.md)
     * [Sudoku](dfs/sudoku.md)
