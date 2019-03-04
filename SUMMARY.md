@@ -70,7 +70,7 @@
     * [Bus Route](bfs/bus-route.md)
 * [Dynamic Programming](dynamic-programming.md)
   * [Backpack](dynamic-programming/backpack.md)
-    * K-Sum
+    * [K-Sum](dynamic-programming/backpack/k-sum.md)
     * [Backpack1-01](dynamic-programming/backpack/backpack1.md)
     * [Backpack2-01](dynamic-programming/backpack/backpack2-01.md)
     * [Backpack4-Complete](dynamic-programming/backpack/backpack6-multiply.md)
