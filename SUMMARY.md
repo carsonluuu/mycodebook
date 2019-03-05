@@ -39,6 +39,7 @@
     * [Flood Fill](dfs/4-traverse/flood-fill.md)
   * [5 Path](dfs/path.md)
     * [Longest Increasing Path in a Matrix](dfs/path/longest-increasing-path-in-a-matrix.md)
+    * [Unique Paths III](dfs/path/unique-paths-iii.md)
   * [6 Memo](dfs/5-memo.md)
     * [Knight Dialer](dfs/path/knight-dialer.md)
     * [Regular Expression Matching](dfs/path/regular-expression-matching.md)
