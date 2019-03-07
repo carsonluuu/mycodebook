@@ -61,6 +61,7 @@
     * [Pacific Atlantic Water Flow](bfs/pacific-atlantic-water-flow.md)
     * [Surrounded Regions](bfs/surrounded-regions.md)
     * [Walls and Gates](bfs/walls-and-gates.md)
+    * [Max Area of Island](bfs/max-area-of-island.md)
   * [2 Shortest](bfs/2-shortest.md)
     * [01 Matrix](bfs/01-matrix.md)
     * [Knight Shortest Path](bfs/knight-shortest-path.md)
