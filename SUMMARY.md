@@ -185,6 +185,7 @@
     * [Moving Zeros](two-pointers/moving-zeros.md)
     * [Remove Elements](two-pointers/remove-elements.md)
     * [Remove Duplicated](two-pointers/remove-duplicated.md)
+    * [Longest Continuous Increasing Subsequence](two-pointers/longest-continuous-increasing-subsequence.md)
   * [2 Oppsite](two-pointers/2-oppsite.md)
     * [Rotate Array](two-pointers/2-oppsite/rotate-string.md)
     * [Container With Most Water](two-pointers/2-oppsite/container-with-most-water.md)
