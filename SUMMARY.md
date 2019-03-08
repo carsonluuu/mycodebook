@@ -222,6 +222,7 @@
   * [1 Pattern](string/1-pattern.md)
     * [Is Subsequence](string/1-pattern/is-subsequence.md)
     * One Edit Distance
+    * [Backspace String Compare](string/1-pattern/backspace-string-compare.md)
   * [2 Implementation](string/implementation.md)
     * [Find the Closest Palindrome](string/implementation/d.md)
     * [Reverse Words in a String](string/implementation/reverse-words-in-a-string.md)
