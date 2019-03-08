@@ -236,6 +236,7 @@
     * [Compare Version Numbers](string/4-number/compare-version-numbers.md)
     * [String to Integer \(atoi\)](string/4-number/string-to-integer-atoi.md)
     * [Integer to English Words](string/4-number/integer-to-english-words.md)
+    * [Integer to Roman](string/4-number/integer-to-roman.md)
   * [5 Decode](string/5-decode.md)
     * [Decode String](string/5-decode/decode-string.md)
   * [6 Palindrome](string/6-palindrome.md)
