@@ -328,6 +328,8 @@
     * [Maximal Rectangle](advanced-data-structures/3-monotone-stack/maximal-rectangle.md)
     * [Remove K Digits](advanced-data-structures/3-monotone-stack/remove-k-digits.md)
     * [Remove Duplicate Letters](advanced-data-structures/3-monotone-stack/remove-duplicate-letters.md)
+    * [Next Greater Element I](advanced-data-structures/3-monotone-stack/next-greater-element-i.md)
+    * [Next Greater Element II](advanced-data-structures/3-monotone-stack/next-greater-element-ii.md)
   * [4 TreeSet/TreeMap](advanced-data-structures/4-treemap.md)
     * [My Calendar I](advanced-data-structures/4-treemap/my-calendar.md)
   * [5 Random](advanced-data-structures/random.md)
