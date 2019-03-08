@@ -1,6 +1,6 @@
 # [String to Integer \(atoi\)](https://leetcode.com/problems/string-to-integer-atoi/description/)
 
-Implement`atoi`which converts a string to an integer.
+Implement`atoi`which converts a string to an integer.
 
 The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value.
 
@@ -13,8 +13,8 @@ If no valid conversion could be performed, a zero value is returned.
 **Note:**
 
 * Only the space character`' '`is considered as whitespace character.
-* Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: \[−2^31,  2
-  ^31 − 1\]. If the numerical value is out of the range of representable values, INT\_MAX \(2^31 − 1\) or INT\_MIN \(−2^31\) is returned.
+* Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: \[−2^31,  2
+  ^31 − 1\]. If the numerical value is out of the range of representable values, INT\_MAX \(2^31 − 1\) or INT\_MIN \(−2^31\) is returned.
 
 ### Example
 
@@ -84,6 +84,14 @@ Explanation:
 ```
 
 ### Note
+
+实现题，注意不同出题条件下的不同规则
+
+本质：
+
+```
+sum = sum*10 + str.charAt(i) - '0';
+```
 
 ### Code
 
