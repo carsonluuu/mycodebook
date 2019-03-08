@@ -1,6 +1,6 @@
 # [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/description/)
 
-Given two strings `S` and`T`, return if they are equal when both are typed into empty text editors.`#`means a backspace character.
+Given two strings `S` and`T`, return if they are equal when both are typed into empty text editors.`#`means a backspace character.
 
 ### **Example**
 
@@ -38,7 +38,12 @@ Explanation: S becomes "c" while T becomes "b".
 
 ### Note
 
-最优解就是记录\#的数目，当遇到\#大于0的时候就跳过下一个字符，并减少\#的count
+最优解就是
+
+* 记录\#的数目，反向遍历。
+* 当遇到\#大于0的时候就跳过下一个字符，并减少\#的count
+* 如果遇到的是字符，且\#的count是0，就相互直接比较
+* i或者j应该同时到起点
 
 比较不太好写
 
@@ -53,9 +58,9 @@ class Solution {
         System.out.println(deal(S));
         System.out.println(deal(T));
         return deal(S).equals(deal(T));
-        
+
     }
-    
+
     private String deal(String S) {
         Stack<Character> stack = new Stack<>();
         //S = "a##c", T = "#a#c"
