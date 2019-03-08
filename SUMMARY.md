@@ -361,6 +361,8 @@
     * [Intersection of Three Sorted Array](data-structure/merge/intersection-of-three-sorted-array.md)
     * [Intersection of Two Arrays](data-structure/merge/intersection-of-two-arrays.md)
     * [Intersection of Two Arrays II](data-structure/merge/intersection-of-two-arrays-ii.md)
+  * [6 Geometry](data-structure/6-geometry.md)
+    * [Max Points on a Line](data-structure/6-geometry/max-points-on-a-line.md)
   * [\# Tricky](data-structure/tricky.md)
     * [Maximum Product of Three Numbers](data-structure/tricky/maximum-product-of-three-numbers.md)
     * [Set Mismatch](data-structure/tricky/set-mismatch.md)
