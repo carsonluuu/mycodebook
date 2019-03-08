@@ -50,15 +50,13 @@ O\(1\)时间
 
 对于12345:
 
-word  = helper\(12\) + THOUSANDS\[1\] + helper\(345\) + THOUSANDS\[0\]
-
-                                                                   -------------------word-----------------
-
-                                                                   helper\(345\) = LESS\_THAN\_20\[3\] + " Hundred " + helper\(45\)
-
-                                                                                                                                                      helper\(45\) = TENS\[4\] + " " + helper\(5\)
 
 
+```
+word=helper(12)+THOUSANDS[1]+helper(345)+THOUSANDS[0]
+                             helper(345) = LESS_THAN_20[3]+" Hundred "+helper(45)
+                                                                       helper(45)=TENS[4]+" "+helper(5)
+```
 
 ### Code
 
