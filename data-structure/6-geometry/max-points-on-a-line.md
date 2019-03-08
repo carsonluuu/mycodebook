@@ -1,6 +1,6 @@
 # [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/description/)
 
-Given _n _points on a 2D plane, find the maximum number of points that lie on the same straight line.
+Given \_n \_points on a 2D plane, find the maximum number of points that lie on the same straight line.
 
 ### **Example**
 
@@ -17,11 +17,11 @@ Explanation:
 
 ^
 |
-|        o
-|     o
-|  o  
+|        o
+|     o
+|  o  
 +------------->
-0  1  2  3  4
+0  1  2  3  4
 ```
 
 **Example 2:**
@@ -37,14 +37,20 @@ Explanation:
 ^
 |
 |  o
-|     o        o
-|        o
-|  o        o
+|     o        o
+|        o
+|  o        o
 +------------------->
-0  1  2  3  4  5  6
+0  1  2  3  4  5  6
 ```
 
 ### Note
+
+O\(n^2\)的方法，注意overlap
+
+GCD算一点到其他点的斜率，`i = 0: len, j = i + 1 : len`
+
+Map的key就是GCD之后的斜率，维护最大的频次，每次run外层循环进行clear和更新
 
 ### Code
 
@@ -86,7 +92,7 @@ class Solution {
         }
         return res;
     }
-    
+
     private int findGCD(int a, int b) {
         if (b == 0) {
             return a;
