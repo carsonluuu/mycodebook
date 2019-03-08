@@ -48,6 +48,18 @@ Output:
 
 O\(1\)时间
 
+对于12345:
+
+word  = helper\(12\) + THOUSANDS\[1\] + helper\(345\) + THOUSANDS\[0\]
+
+                                                                   -------------------word-----------------
+
+                                                                   helper\(345\) = LESS\_THAN\_20\[3\] + " Hundred " + helper\(45\)
+
+                                                                                                                                                      helper\(45\) = TENS\[4\] + " " + helper\(5\)
+
+
+
 ### Code
 
 ```java
@@ -87,7 +99,7 @@ class Solution {
         if (num < 100) {
             return TENS[num / 10] + " " + helper(num % 10);
         }
-        
+
         return LESS_THAN_20[num / 100] + " Hundred " + helper(num % 100);
     }
 }
