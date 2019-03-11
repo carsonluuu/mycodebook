@@ -1,4 +1,4 @@
-```
+```java
 class Solution {
     public double myPow(double x, int n) {
         if (n > 0) {
@@ -8,7 +8,7 @@ class Solution {
             return 1.0 / pow(x, n);
         }
     }
-    
+
     public static double pow(double x, int n) {
         if (n == 0) {
             return 1;
