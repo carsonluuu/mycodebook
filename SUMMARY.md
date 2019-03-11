@@ -353,7 +353,7 @@
     * [Contiguous 01-Array](data-structure/presum/contiguous-01-array.md)
     * Flip 01String to Monotone Increasing
   * [2 Bucket](data-structure/2-bucket.md)
-    * Maximum Gap
+    * [Maximum Gap](data-structure/2-bucket/maximum-gap.md)
   * [3 Simulation](data-structure/3-simulation.md)
     * Pour Water
   * [4 Buffer](data-structure/buffer.md)
