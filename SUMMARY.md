@@ -398,6 +398,7 @@
     * [Matrix Coordinate](appendix/math/matrix-coordinate.md)
     * [Sqrt\(x\)](appendix/math/sqrtx.md)
     * [Divide Two Integers](appendix/math/divide-two-integers.md)
+    * [pow\(x, n\)](appendix/math/powx-n.md)
   * [Sorting](appendix/sorting.md)
     * [Merge Sort](appendix/sorting/merge-sort.md)
     * [Quick Sort](appendix/sorting/quick-sort.md)
