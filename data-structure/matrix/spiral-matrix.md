@@ -1,6 +1,6 @@
 # [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/)
 
-Given a matrix of_m_x_n_elements \(_m _rows, _n _columns\), return all elements of the matrix in spiral order.
+Given a matrix of\_m\_x\_n\_elements \(\_m \_rows, \_n \_columns\), return all elements of the matrix in spiral order.
 
 ### Example
 
@@ -17,7 +17,6 @@ Input:
 
 Output:
  [1,2,3,6,9,8,7,4,5]
-
 ```
 
 **Example 2:**
@@ -51,20 +50,20 @@ class Solution {
         int[] dc = {1, 0, -1, 0};
         boolean[][] seen = new boolean[R][C];
         int r = 0, c = 0, di = 0;
-        for(int i = 0; i < R*C; i++){
+        for (int i = 0; i < R*C; i++) {
             res.add(matrix[r][c]);
             seen[r][c] = true;
             int rNext = r + dr[di];
             int cNext = c + dc[di];
-            if(rNext >= 0 && rNext < R && cNext >= 0 && cNext < C && !seen[rNext][cNext]){                
+            if (rNext >= 0 && rNext < R && cNext >= 0 && cNext < C && !seen[rNext][cNext]) {                
                 r = rNext;
                 c = cNext;
-            }else{
-                di = (di + 1)%4;
+            } else {
+                di = (di + 1) % 4;
                 r += dr[di];
                 c += dc[di];                
             }
-                
+
         }
         return res;
     }
