@@ -89,15 +89,11 @@ head和tail分别对应read4的结果的头尾指针，会保留上次call的结
 
 空：head == tail -&gt; 重置，走到头了；tail是0那么说明读完了直接退出
 
---- 
-
 RUN: "abc", \[1,2,1\]
 
-第一次：tail = 3，n = 1, head = 1
-
-第二次：不enqueue，head = 1 n = 2 tail = 3
-
-第三次：head = tail = 3 then head= 0 but tail = 0 break and finish
+* 第一次：tail = 3，n = 1, head = 1
+* 第二次：不enqueue，head = 1 n = 2 tail = 3
+* 第三次：head = tail = 3 then head= 0 but tail = 0 break and finish
 
 ### Code
 
