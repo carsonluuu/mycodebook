@@ -108,39 +108,30 @@ class Solution {
             return res;
         }
         
-        Map<Integer, List<Integer>> map = new TreeMap<>();
-        Queue<Integer> column = new LinkedList<>();
+        TreeMap<Integer, List<Integer>> map = new TreeMap<>();
+        Queue<Integer> col = new LinkedList<>();
         Queue<TreeNode> q = new LinkedList<>();
-        column.offer(0);
+        col.offer(0);
         q.offer(root);
         
         while (!q.isEmpty()) {
             TreeNode curr = q.poll();
-            int col = column.poll();
-            if (!map.containsKey(col)) {
-                map.put(col, new ArrayList(Arrays.asList(curr.val)));
-            } else {
-                map.get(col).add(curr.val);
-            }
+            int column = col.poll();
+            map.putIfAbsent(column, new ArrayList<>());
+            map.get(column).add(curr.val);
             if (curr.left != null) {
                 q.offer(curr.left);
-                column.offer(col - 1);
-                //min = Math.min(min, col - 1);
+                col.offer(column - 1);
             }
             if (curr.right != null) {
                 q.offer(curr.right);
-                column.offer(col + 1);
-                //max = Math.min(max, col + 1);
+                col.offer(column + 1);
             }
         }
         
         for (int elem : map.keySet()) {
             res.add(map.get(elem));
         }
-        
-//         for (int i = min; i <= max; i++) {
-//             res.add(map.get(i));
-//         }
         
         return res;
     }
