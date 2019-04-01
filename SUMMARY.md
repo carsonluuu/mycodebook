@@ -359,7 +359,7 @@
   * [3 Simulation](data-structure/3-simulation.md)
     * Pour Water
   * [4 Buffer](data-structure/buffer.md)
-    * Read N Characters Given Read4 II - Call multiple times
+    * [Read N Characters Given Read4 II - Call multiple times](data-structure/buffer/read-n-characters-given-read4-ii-call-multiple-times.md)
     * Read N Characters Given Read4
     * [Third Maximum Number](data-structure/buffer/third-maximum-number.md)
   * [5 Merge/Union](data-structure/merge.md)
