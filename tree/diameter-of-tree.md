@@ -30,29 +30,35 @@ Return **3**, which is the length of the path \[4,2,1,3\] or \[5,2,1,3\].
  */
 class Solution {
     private static class ResultType {
-        int hight, diameter;
-        public ResultType(int hight, int diameter) {
-            this.hight = hight;
-            this.diameter = diameter;
+        int h;
+        int d;
+        ResultType(int h, int d) {
+            this.h = h;
+            this.d = d;
         }
     }
     public int diameterOfBinaryTree(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+     
         ResultType res = dfs(root);
-        return res.diameter;
+        
+        return res.d;
     }
-
+    
     private ResultType dfs(TreeNode root) {
         if (root == null) {
             return new ResultType(0, 0);
         }
-
-        ResultType left  = dfs(root.left);
+        
+        ResultType left = dfs(root.left);
         ResultType right = dfs(root.right);
-
-        int hight = 1 + Math.max(left.hight, right.hight);
-        int diameter = Math.max(Math.max(left.diameter, right.diameter), left.hight + right.hight);
-
-        return new ResultType(hight, diameter);
+        
+        int h = 1 + Math.max(left.h, right.h);
+        int d = Math.max(Math.max(left.d, right.d), left.h + right.h);
+        
+        return new ResultType(h, d);
     }
 }
 ```
