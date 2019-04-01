@@ -360,7 +360,7 @@
     * Pour Water
   * [4 Buffer](data-structure/buffer.md)
     * [Read N Characters Given Read4 II - Call multiple times](data-structure/buffer/read-n-characters-given-read4-ii-call-multiple-times.md)
-    * Read N Characters Given Read4
+    * [Read N Characters Given Read4](data-structure/buffer/read-n-characters-given-read4.md)
     * [Third Maximum Number](data-structure/buffer/third-maximum-number.md)
   * [5 Merge/Union](data-structure/merge.md)
     * [Merge k Sorted Lists](data-structure/merge/merge-k-sorted-lists.md)
