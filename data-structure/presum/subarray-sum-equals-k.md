@@ -54,34 +54,22 @@ class Solution {
 ```
 
 ```java
-public class Solution {
-    /**
-     * @param nums: a list of integer
-     * @param k: an integer
-     * @return: return an integer, denote the number of continuous subarrays whose sum equals to k
-     */
-    public int subarraySumEqualsK(int[] nums, int k) {
-        // write your code here
-        int count = 0, sum = 0;
+class Solution {
+    public int subarraySum(int[] nums, int k) {
         Map<Integer, Integer> map = new HashMap<>();
-
         map.put(0, 1);
-
+        int res = 0, sum = 0;
         for (int i = 0; i < nums.length; i++) {
             sum += nums[i];
-
+            
             if (map.containsKey(sum - k)) {
-                count = count + map.get(sum - k);
+                res += map.get(sum - k);
             }
-
-            if (map.containsKey(sum)) {
-                map.put(sum, map.get(sum) + 1);
-            } else {
-                map.put(sum, 1);
-            }
+            
+            map.put(sum, map.getOrDefault(sum, 0) + 1);
         }
-
-        return count;
+        
+        return res;
     }
 }
 ```
