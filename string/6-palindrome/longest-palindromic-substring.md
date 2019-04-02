@@ -1,4 +1,4 @@
-# Longest Palindromic Substring
+# Find Longest Palindromic Substring
 
 Find the Longest Palindromic Substring for a string. Return "" if there is not one.
 
