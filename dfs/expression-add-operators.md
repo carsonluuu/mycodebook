@@ -122,7 +122,7 @@ class Solution {
                 dfs(num, target, res, "" + curr, curr, curr, i + 1);
             } else {
                 dfs(num, target, res, s + "*" + curr, 
-                    sum + curr * lastValue - lastValue, curr * lastValue, i + 1);
+                    sum + curr * lastValue - lastValue, curr * lastValue, i + 1); //minus last and add *
                 dfs(num, target, res, s + "+" + curr, sum + curr,  curr,  i + 1);
                 dfs(num, target, res, s + "-" + curr, sum - curr, -curr,  i + 1);
             }

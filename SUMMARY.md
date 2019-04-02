@@ -222,6 +222,7 @@
     * [Longest Palindromic Substring](string/6-palindrome/longest-palindromic-substring.md)
     * [Valid Palindrome](string/6-palindrome/valid-palindrome.md)
     * [Valid Palindrome II](string/6-palindrome/valid-palindrome-ii.md)
+    * [Palindrome Number](string/6-palindrome/palindrome-number.md)
   * [7 Evaluation](string/7-evaluation.md)
     * [Solve the Equation](string/implementation/solve-the-equation.md)
     * [Simplify Path](string/implementation/simplify-path.md)
