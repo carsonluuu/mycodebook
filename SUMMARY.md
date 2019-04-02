@@ -228,6 +228,7 @@
     * [Palindrome Partitioning](string/6-palindrome/palindrome-partitioning.md)
     * [Find Longest Palindromic Substring](string/6-palindrome/longest-palindromic-substring.md)
     * [Longest Palindromic Subsequence](string/6-palindrome/longest-palindromic-subsequence.md)
+    * [Longest Palindromic Substrings](string/6-palindrome/longest-palindromic-substrings.md)
   * [7 Evaluation](string/7-evaluation.md)
     * [Solve the Equation](string/implementation/solve-the-equation.md)
     * [Simplify Path](string/implementation/simplify-path.md)
