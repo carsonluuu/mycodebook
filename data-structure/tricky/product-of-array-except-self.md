@@ -1,6 +1,6 @@
 # [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/)
 
-Given an array`nums`of_n_integers where_n_&gt; 1,  return an array`output`such that`output[i]`is equal to the product of all the elements of`nums`except`nums[i]`.
+Given an array`nums`of_n\_integers where\_n_&gt; 1,  return an array`output`such that`output[i]`is equal to the product of all the elements of`nums`except`nums[i]`.
 
 ### **Example**
 
@@ -20,9 +20,9 @@ Could you solve it with constant space complexity? \(The output array **does not
 
 使用左右遍历的方法，记录left乘以right
 
-left表示这数字左边所有数的乘积
+left表示这数字左边所有数的乘积 -- 这里直接写入res数组
 
-right表示这数字右边所有数的乘积
+right表示这数字右边所有数的乘积 -- 这里使用常数迭代更新
 
 ```
 Numbers: 2     3    4    5
@@ -50,7 +50,7 @@ class Solution {
             right  *= nums[i];
         }
         return res;
-    
+
     }
 }
 ```
