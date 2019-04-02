@@ -218,6 +218,7 @@
     * [Integer to Roman](string/4-number/integer-to-roman.md)
     * [Roman to Integer](string/4-number/roman-to-integer.md)
     * [Multiply Strings](string/4-number/multiply-strings.md)
+    * [Reverse Integer](string/4-number/reverse-integer.md)
   * [5 Decode](string/5-decode.md)
     * [Decode String](string/5-decode/decode-string.md)
     * [Encode and Decode Strings](string/5-decode/encode-and-decode-strings.md)
