@@ -1,4 +1,4 @@
-### Longest Increasing Path in a Matrix
+# Longest Increasing Path in a Matrix
 
 Given an integer matrix, find the length of the longest increasing path.
 
@@ -34,7 +34,6 @@ Explanation: The longest increasing path is [3, 4, 5, 6]. Moving diagonally is n
 
 ### Note
 
-  
 Given a matrix:
 
 \[  
@@ -69,24 +68,24 @@ class Solution {
             matrix[0] == null || matrix[0].length == 0) {
             return 0;
         }
-        
+
         int res = 0, m = matrix.length, n = matrix[0].length;
         int[][] memo = new int[m][n]; //res from Node (i,j)
-        
+
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 res = Math.max(res, dfs(matrix, i, j, memo));
             }
         }
-        
+
         return res;
     }
-    
+
     private int dfs(int[][] matrix, int i, int j, int[][] memo) {
         if (memo[i][j] != 0) {
             return memo[i][j];
         }
-        
+
         int m = matrix.length, n = matrix[0].length;
         int[][] dir = new int[][]{{1, 0},{0, 1},{-1, 0},{0, -1}};
         for (int k = 0; k < dir.length; k++) {
@@ -98,7 +97,7 @@ class Solution {
             }
         }
         memo[i][j] += 1;
-        
+
         return memo[i][j];
     }
 }
