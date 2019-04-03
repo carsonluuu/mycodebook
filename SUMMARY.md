@@ -37,6 +37,7 @@
     * [Nested List Weight Sum](dfs/nested-list-weight-sum.md)
   * [4 Flood Fill](dfs/4-traverse.md)
     * [Flood Fill](dfs/4-traverse/flood-fill.md)
+    * [Number of Enclaves](dfs/4-traverse/number-of-enclaves.md)
   * [5 Path](dfs/path.md)
     * [Longest Increasing Path in a Matrix](dfs/path/longest-increasing-path-in-a-matrix.md)
     * [Unique Paths III](dfs/path/unique-paths-iii.md)
