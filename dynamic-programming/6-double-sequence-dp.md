@@ -10,9 +10,8 @@
 
 • answer: f\[n\]\[m\] min/max/数目/存在关系
 
-• n = s1.length\(\)
-
-• m = s2.length\(\)
+* n = s1.length\(\)
+* m = s2.length\(\)
 
 解题技巧画矩阵，填写矩阵
 
