@@ -365,6 +365,7 @@
   * [2 Match Sequence DP](dynamic-programming/6-double-sequence-dp.md)
     * [Edit Distance](dynamic-programming/edit-distance.md)
     * [Minimum Swaps To Make Sequences Increasing](dynamic-programming/minimum-swaps-to-make-sequences-increasing.md)
+    * [Longest Common Subsequence](dynamic-programming/longest-common-subsequence.md)
   * [3 Interval DP](dynamic-programming/5-interval-dp.md)
     * [Burst Ballons](dynamic-programming/game-dp/burst-ballons.md)
     * [Stone Game](dynamic-programming/game-dp/stone-game.md)
