@@ -364,6 +364,7 @@
     * [Decode Ways](dynamic-programming/decode-ways.md)
   * [2 Match Sequence DP](dynamic-programming/6-double-sequence-dp.md)
     * [Edit Distance](dynamic-programming/edit-distance.md)
+    * [K Edit Distance](dynamic-programming/k-edit-distance.md)
     * [Longest Common Subsequence](dynamic-programming/longest-common-subsequence.md)
     * [Minimum Swaps To Make Sequences Increasing](dynamic-programming/minimum-swaps-to-make-sequences-increasing.md)
   * [3 Interval DP](dynamic-programming/5-interval-dp.md)

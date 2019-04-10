@@ -80,7 +80,7 @@ class Solution {
         for (int i = 0; i <= len2; i++) {
             dp[0][i] = i;
         }
-        
+
         for (int i = 1; i <= len1; i++) {
             for (int j = 1; j <= len2; j++) {
                 if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
@@ -93,6 +93,31 @@ class Solution {
             }
         return dp[len1][len2];
     }
+}
+```
+
+```java
+public int minDistance(String word1, String word2) {
+    // write your code here
+    int n = word1.length();
+    int m = word2.length();
+    int[] prev = new int[m+1];
+    for(int i = 0; i <= m; i++) {
+        prev[i] = i;
+    }
+    for(int i = 1; i <= n; i++) {
+        int[] current = new int[m+1];
+        current[0] = i;
+        for(int j = 1; j <= m; j++) {
+            if(word1.charAt(i-1)==word2.charAt(j-1)) {
+                current[j] = prev[j-1];
+            } else {
+                current[j] = Math.min(prev[j-1], Math.min(current[j-1], prev[j]))+1;
+            }
+        }
+        prev = current;
+    }
+    return prev[m];
 }
 ```
 
