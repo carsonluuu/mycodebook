@@ -367,6 +367,7 @@
     * [K Edit Distance](dynamic-programming/k-edit-distance.md)
     * [Longest Common Subsequence](dynamic-programming/longest-common-subsequence.md)
     * [Minimum Swaps To Make Sequences Increasing](dynamic-programming/minimum-swaps-to-make-sequences-increasing.md)
+    * [Scramble String](dynamic-programming/scramble-string.md)
   * [3 Interval DP](dynamic-programming/5-interval-dp.md)
     * [Burst Ballons](dynamic-programming/game-dp/burst-ballons.md)
     * [Stone Game](dynamic-programming/game-dp/stone-game.md)
