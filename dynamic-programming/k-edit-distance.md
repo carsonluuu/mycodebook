@@ -23,7 +23,15 @@ Return`["abc", "adc"]`
 * DFS遍历Trie树上的所有a-z的节点
 * dp\[i\] 表示从Trie的root节点走到当前node节点，形成的Prefix和 target的前i个字符的最小编辑距离
 
- dp指的是上一次的情况。现在更新i，j这个格子，那么我要往左上方看\(i-1, j-1\)，要往上看\(i-1, j\)，这两种就是分别对应dp数组里的dp\[j-1\]和dp\[j\]。然后我还要往左边看i, j-1，此时行不变，相当于我看next数组里我左边那个刚刚更新过的值，所以是next\[j-1\]
+  dp指的是上一次的情况。现在更新i，j这个格子，那么我要往左上方看\(i-1, j-1\)，要往上看\(i-1, j\)，这两种就是分别对应dp数组里的dp\[j-1\]和dp\[j\]。然后我还要往左边看i, j-1，此时行不变，相当于我看next数组里我左边那个刚刚更新过的值，所以是next\[j-1\]. dp代表这一行 ====&gt; \[i-1,j-1\],\[i -1,j\] next代表dp的下一行 \[i,j-1\], \[i,j\]. next\[0\] = dp\[0\] + 1 相当于next\[0\] = i, i 从1开始累积
+
+```
+dp[i][j] = dp[i-1][j-1]
+next[i]  = dp[i-1]
+=======
+dp[i][j] = min(dp[i-1][j-1], dp[i-1][j], dp[i][j-1])
+next[i]  = min(dp[i-1],      dp[i],      next[i-1])
+```
 
 ### Code
 
@@ -37,13 +45,13 @@ public class Solution {
             children = new HashMap<>();
         }
     }
-    
+
     private class Trie{
         TrieNode root;
         Trie(){
             root = new TrieNode();
         }
-        
+
         public void insert(String word){
             TrieNode curt = root;
             for(int i = 0; i < word.length(); i++){
@@ -56,9 +64,9 @@ public class Solution {
             curt.isWord = true;
             curt.word = word;
         }
-        
+
     }
-    
+
     /**
      * @param words: a set of stirngs
      * @param target: a target string
@@ -83,7 +91,7 @@ public class Solution {
         dfs(trie.root,target,k,ans,dp);
         return ans;
     }
-    
+
     private void dfs(TrieNode node,String target,int k, List<String> ans, int[] dp){
         if(node.isWord && dp[target.length()] <= k){
             ans.add(node.word);
@@ -104,9 +112,9 @@ public class Solution {
             }
             dfs(v,target,k,ans,next);
         });
-        
+
     }
-    
+
 }
 ```
 
