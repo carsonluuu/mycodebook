@@ -36,7 +36,6 @@ Total coins 15 + 15 + 5  = 35
 
 ### Note
 
-  
 死胡同：容易想到的一个思路从小往大，枚举第一次在哪吹爆气球？
 
 记忆化搜索的思路，从大到小，先考虑最后一个气球被吹爆之后的获益
@@ -66,22 +65,24 @@ public class Solution {
         if (nums == null || nums.length == 0){
             return 0;
         }
-        
+
         nums = init(nums);
         int[][] dp = new int[nums.length][nums.length];
-        
+
         for (int i = nums.length - 1; i >= 0; i--) {
             for (int j = i + 2; j < nums.length; j++) {
                 for (int k = i + 1; k < j; k++) {
-                    dp[i][j] = Math.max(dp[i][j], dp[i][k] +  dp[k][j] + nums[i] * nums[k] * nums[j]);    //状态转移利用小区间最优解更新大区间
+                    dp[i][j] = Math.max(dp[i][j], dp[i][k] +  dp[k][j] + nums[i] * nums[k] * nums[j]);    
+                    //状态转移利用小区间最优解更新大区间
                 }
             }
         }
-        
+
         return dp[0][nums.length - 1];
     }
-    
-    public int[] init(int[] nums){					//初始化数组，头部和尾部插入1
+
+    public int[] init(int[] nums){                    
+        //初始化数组，头部和尾部插入1
         int[] temp = new int[nums.length + 2];
         temp[0] = 1;
         for(int i = 1; i < temp.length - 1; i++){
@@ -91,6 +92,37 @@ public class Solution {
         return temp;
     }
 }
+```
+
+```py
+class Solution:
+    """
+    @param nums: A list of integer
+    @return: An integer, maximum coins
+    """
+    def maxCoins(self, nums):
+        if not nums:
+            return 0
+
+        # [4,1,5] => [1,4,1,5,1]
+        nums = [1, *nums, 1]
+        return self.memo_search(nums, 0, len(nums) - 1, {})
+        
+    def memo_search(self, nums, i, j, memo):
+        if i == j:
+            return 0 
+            
+        if (i, j) in memo:
+            return memo[(i, j)]
+        
+        best = 0
+        for k in range(i + 1, j):
+            left = self.memo_search(nums, i, k, memo)
+            right = self.memo_search(nums, k, j, memo)
+            best = max(best, left + right + nums[i] * nums[k] * nums[j])
+        
+        memo[(i, j)] = best
+        return best
 ```
 
 
