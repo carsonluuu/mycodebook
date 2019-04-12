@@ -1,5 +1,6 @@
 ```java
 int[] array = list.stream().mapToInt(i->i).toArray();
+String[] namesArr = names.stream().toArray(String[]::new);
 ```
 
 ```java
