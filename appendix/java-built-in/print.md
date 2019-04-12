@@ -1,4 +1,8 @@
 ```java
+int[] array = list.stream().mapToInt(i->i).toArray();
+```
+
+```java
 import java.util.Arrays;
 
 public class PrintArray {
