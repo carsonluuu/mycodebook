@@ -32,7 +32,7 @@
     * [Remove Elements](two-pointers/remove-elements.md)
     * [Remove Duplicated](two-pointers/remove-duplicated.md)
     * [Longest Continuous Increasing Subsequence](two-pointers/longest-continuous-increasing-subsequence.md)
-    * [Replace all occurrences of string AB with C](two-pointers/replace-all-occurrences-of-string-ab-with-c.md)
+    * [Replace all Occurrences of String AB with C](two-pointers/replace-all-occurrences-of-string-ab-with-c.md)
   * [2 Oppsite](two-pointers/2-oppsite.md)
     * [Rotate Array](two-pointers/2-oppsite/rotate-string.md)
     * [Container With Most Water](two-pointers/2-oppsite/container-with-most-water.md)
