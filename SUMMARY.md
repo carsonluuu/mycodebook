@@ -314,6 +314,7 @@
 * [Advanced Data Structures](advanced-data-structures.md)
   * [1 Trie](advanced-data-structures/trie.md)
     * [Implement Trie](advanced-data-structures/trie/implement-trie.md)
+    * [Stream of Characters](advanced-data-structures/trie/stream-of-characters.md)
   * [2 Union Find](advanced-data-structures/union-find.md)
     * [Number of Islands II](advanced-data-structures/union-find/number-of-islands-ii.md)
     * [\[Union Find\]Graph Connect Tree](advanced-data-structures/union-find/union-findgraph-connect-tree.md)
