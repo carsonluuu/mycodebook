@@ -6,6 +6,21 @@
 
 `Sum(i~j) = PrefixSum[j + 1] - PrefixSum[i]`
 
+Other:
+
+```
+int[] sum = new int[len];
+sum[0] = A[0];
+
+for (int i = 1; i < len; ++i) {
+    sum[i] = sum[i - 1] + A[i];
+}
+```
+
+第一种右闭左开：sum\[1-2\] = sum\[3\] - sum\[1\]
+
+第二种左开右闭: sum\[1-2\] = sum\[2\] - sum\[0\], sum\[k\]即为前k项和
+
 ### Subarray Equals to Target
 
 * Using HashMap to store \( key : the **PrefixSum**, value : how many ways get to this prefix sum\). 
